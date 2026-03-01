@@ -1,0 +1,33 @@
+\begin{table}[ht]
+\centering
+\captionsetup{font=small, labelfont=bf}
+\begin{threeparttable}
+\begin{adjustbox}{width=\textwidth} % Resize table to fit page width
+\begin{tabular}{lccc}
+\toprule
+\multicolumn{4}{l}{\textbf{Dependent Variable: Number of New Female Hires}} \\
+\midrule
+& (1) & (2) & (3) \\
+\midrule
+$\#$Drafted                 & 0.139***   & 0.195***   & 0.093*     \\
+                                      & (0.040)    & (0.041)    & (0.037)    \\
+$\#$Eligible                      & 0.032***   & 0.028**    & 0.035***   \\
+                                      & (0.008)    & (0.009)    & (0.008)    \\
+\midrule
+Num. Observations                     & 5011       & 5012       & 5062       \\
+Marginal effect & 15\% & 21\% & 9\%  \\
+Mean of Control & 0.21 & 0.21 & 0.21 \\
+\( R^2 \)                             & 0.405      & 0.186      & 0.339      \\
+Standard Errors                       & by Office-Year & by Office-Year & by Office-Year \\
+Fixed Effects: Year                   & \checkmark        & \checkmark        & \checkmark        \\
+Fixed Effects: Occupation               & \checkmark        &            & \checkmark        \\
+Fixed Effects: Division               & \checkmark        & \checkmark        &            \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\begin{tablenotes}
+\small
+\item Notes:  + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

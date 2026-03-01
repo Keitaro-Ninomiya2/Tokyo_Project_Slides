@@ -1,0 +1,37 @@
+\begin{table}[ht]
+\[
+Y_{jkt} \sim \mathrm{Poisson}(\lambda_{jkt}), \quad 
+\log\bigl(\mathbb{E}[Y_{jkt}]\bigr) = \log(\lambda_{jkt}) = X_{i,j}\beta + \iota_j + \mu_k + \alpha_t.
+\]
+\centering
+\captionsetup{font=small, labelfont=bf}
+\begin{threeparttable}
+\begin{adjustbox}{width=\textwidth} % Resize table to fit page width
+\begin{tabular}{lccc}
+\toprule
+\multicolumn{4}{l}{\textbf{Dependent Variable: Number of New Hires}} \\
+\midrule
+& (1) & (2) & (3) \\
+\midrule
+$\#$Drafted                & 0.118***   & 0.149***   & 0.112***   \\
+                                      & (0.030)    & (0.031)    & (0.028)    \\
+$\#$Eligible                     & 0.057***   & 0.047***   & 0.057***   \\
+                                      & (0.007)    & (0.007)    & (0.007)    \\
+\midrule
+Num. Observations                     & 5011       & 5012       & 5062       \\
+Marginal effect & 13\% & 16\% & 12\%  \\
+Mean of Control & 3.64 & 3.64 & 3.64 \\
+\( R^2 \)                             & 0.565      & 0.465      & 0.527      \\
+Standard Errors                       & by Office-Year & by Office-Year & by Office-Year \\
+Fixed Effects: Year                   & \checkmark        & \checkmark        & \checkmark        \\
+Fixed Effects: Position               & \checkmark        &            & \checkmark        \\
+Fixed Effects: Division               & \checkmark        & \checkmark        &            \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\begin{tablenotes}
+\small
+\item Notes: + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

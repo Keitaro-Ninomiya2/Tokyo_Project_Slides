@@ -1,0 +1,33 @@
+\begin{table}[!h]
+\centering
+\begin{threeparttable}
+\begin{tabular}{lcc}
+\toprule
+& OLS & IV \\ \midrule
+\# Female New Hire & \num{0.013}** & \num{0.010} \\
+& (\num{0.007}) & (\num{0.036}) \\
+\\
+\midrule
+\textbf{First Stage} & & \\
+\midrule
+\# Drafted Workers & & \num{0.128}*** \\
+& & (\num{0.009}) \\
+\\
+\midrule
+Num.Obs. & \num{11405} & \num{10600} \\
+R2 & \num{0.276} & \num{0.272} \\
+F-stat & & 69.24 \\
+FE: year & \checkmark & \checkmark \\
+FE: Position & \checkmark & \checkmark \\
+FE: Division & \checkmark & \checkmark \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\centering
+\small
+\item Notes: + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001.\\
+Standard Errors are clustered at the Office $\times$ Occupation $\times$ Year level.
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:regression_results}
+\end{table}
