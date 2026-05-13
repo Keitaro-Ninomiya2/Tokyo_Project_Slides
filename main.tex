@@ -1,55 +1,104 @@
 \documentclass[aspectratio=169]{beamer}
+
+% ── Packages ──────────────────────────────────────────────────────────────────
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,threeparttable}
+\usepackage{adjustbox}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+
+% Bibliography (biblatex + biber)
+\usepackage[style=authoryear,maxbibnames=99,maxcitenames=2,uniquename=false,uniquelist=false,backend=biber]{biblatex}
+\addbibresource{references.bib}
+\setbeamertemplate{bibliography item}{}
+
+% ── Colours ───────────────────────────────────────────────────────────────────
+\definecolor{navyblue}{RGB}{26,43,76}
+\definecolor{accentred}{RGB}{176,58,46}
+\definecolor{subtitleblue}{RGB}{140,185,225}
+
+% ── Base theme ────────────────────────────────────────────────────────────────
 \usetheme{default}
 \usecolortheme{dove}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{}
 
-\usepackage{amsmath,amssymb}
+% ── Frame title: full-width navy bar ──────────────────────────────────────────
+\setbeamercolor{frametitle}{bg=navyblue, fg=white}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\paperwidth, sep=0.2cm,
+      leftskip=0.5cm]{frametitle}%
+    \usebeamerfont{frametitle}\insertframetitle%
+  \end{beamercolorbox}%
+}
 
-\setbeamerfont{title}{size=\large,series=\bfseries}
-\setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
+% ── Bullets: orange-red filled circles ────────────────────────────────────────
+\setbeamercolor{itemize item}{fg=accentred}
+\setbeamercolor{itemize subitem}{fg=accentred}
+\setbeamercolor{itemize subsubitem}{fg=accentred}
+\setbeamertemplate{itemize item}{\color{accentred}\textbullet}
+\setbeamertemplate{itemize subitem}{\color{accentred}\textbullet}
+\setbeamertemplate{itemize subsubitem}{\color{accentred}\textbullet}
+
+% ── Fonts ─────────────────────────────────────────────────────────────────────
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+
+% ── Title page ────────────────────────────────────────────────────────────────
+\setbeamertemplate{title page}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[navyblue] (current page.north west)
+      rectangle ([yshift=-4.0cm]current page.north east);
+    \node[anchor=north west, text=white, font=\Large\bfseries,
+          text width=\paperwidth-1.4cm, align=left]
+      at ([xshift=0.7cm, yshift=-0.65cm]current page.north west)
+      {\inserttitle};
+  \end{tikzpicture}
+  \vspace{4.2cm}
+  \begin{center}
+    {\large\textbf{\insertauthor}}\\[0.5em]
+    {\small University of Illinois at Urbana-Champaign}\\[0.9em]
+    {\small\color{gray}\insertdate}
+  \end{center}
+}
+
+% ── Metadata ──────────────────────────────────────────────────────────────────
+\title{Military Drafting, Internal Labor Markets, and Career Trajectories}
+\author{Keitaro Ninomiya}
+\date{}
 
 \begin{document}
-\begin{frame}{}
-    \begin{figure}
-        \centering
-        \includegraphics[width=\linewidth]{Institutional Background/Tokyo_Female_Employment_Beamer.pdf}
-        \label{fig:placeholder}
-    \end{figure}
+
+%\begin{frame}[plain]
+%    \titlepage
+%\end{frame}
+
+%\input{Motivation/Motivation.tex}
+
+\input{Research Question/Research Question.tex}
+
+\input{Approach/Approach.tex}
+
+%\input{Results_Intro/Results.tex}
+
+%\input{Contribution/Contribution.tex}
+
+
+\input{Background/Background.tex}
+
+\input{Empirical Strategy/Empirical Strategy}
+
+\input{Results/Results.tex}
+
+\input{Conclusion/Conclusion.tex}
+
+\begin{frame}[allowframebreaks]{References}
+  \printbibliography[heading=none]
 \end{frame}
 
-\begin{frame}{Research Question}
-    \begin{itemize}
-        \item Does prior experience shape organizational differences in response to the removal of hiring restrictions?
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Specification: Female Assignment to \textit{Kanri} Positions After 1950 Reform}
-
-\vspace{-0.3em}
-
-\textbf{Second Stage:}
-\begin{equation*}
-Y_{j,1950} = \beta_1 \, \widehat{FemExp}_{j}^{\text{war}} + \beta_2 \, NewHires_{j,1948\text{-}50} + \gamma \, X_j + \alpha_d + \delta_j^{\text{vac}} + \varepsilon_j
-\end{equation*}
-
-\textbf{First Stage:}
-\begin{equation*}
-FemExp_{j}^{\text{war}} = \pi \, Z_j^{\text{draft}} + \phi \, NewHires_{j,1948\text{-}50} + \tilde{\gamma} \, X_j + \tilde{\alpha}_d + \tilde{\delta}_j^{\text{vac}} + \nu_j
-\end{equation*}
-
-\vspace{0.3em}
-\small
-\begin{tabular}{@{}l@{\;}l}
-$Y_{j,1950}$ & = female share (or indicator) among \textit{kanri} in office $j$ in 1950 \\[3pt]
-$FemExp_{j}^{\text{war}}$ & = avg.\ female share among wartime incumbents still in office $j$ post-war \\[3pt]
-$NewHires_{j,1948\text{-}50}$ & = composition of post-war new hires in office $j$ (number, female share) \\[3pt]
-$Z_j^{\text{draft}}$ & = share of office $j$'s pre-war workers drafted during 1937--44 (instrument) \\[3pt]
-$\alpha_d$ & = department/division fixed effects (compare offices providing similar services) \\[3pt]
-$\delta_j^{\text{vac}}$ & = vacancy control: indicator for whether the \textit{kanri} in office $j$ in 1948 separated \\[3pt]
-$X_j$ & = pre-war office size, occupation mix, share of higher-class employees
-\end{tabular}
-\end{frame}
-
+\appendix
+\input{Background/BalanceTest.tex}
+\input{Conclusion/BombingResearchQuestion.tex}
 \end{document}

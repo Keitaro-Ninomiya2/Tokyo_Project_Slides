@@ -1,49 +1,102 @@
-\begin{transitionframe}{Entry of female workers to Tokyo's civil service}
-    \begin{itemize}
-        \item Traditionally male dominated sector.
-        \begin{itemize}
-        \item Less than 2\% of employees were women.
-        
-        Concentrated in medical departments. \hyperlink{Department}{\beamergotobutton{Gender ratio by department}}
+\begin{frame}[label=hierarchy-identification]{Identification: within-section, within-occupation}
+\begin{columns}[c]
 
-        \vspace{0.5em}
-        
-        \item Women were hired as contract workers without tenure. \hyperlink{Occupation}{\beamergotobutton{Gender ratio by Occupation}}
+%% ── LEFT: Administrative hierarchy ──────────────────────────────
+\begin{column}{0.28\textwidth}
+\centering
+\begin{tikzpicture}[
+  box/.style={rectangle, draw=black!65, rounded corners=2pt, align=center,
+              minimum width=2.7cm, minimum height=0.68cm, font=\small},
+  arrow/.style={-{Stealth[length=2mm]}, thick, black!65},
+  node distance=0.5cm
+]
+\node[box] (to)   {Tokyo Govt};
+\node[box, below=of to]   (dept) {Department\\\scriptsize\textit{avg.\ 8/yr}};
+\node[box, below=of dept] (sec)  {Section\\\scriptsize\textit{avg.\ 34.5 per department}};
+\node[box, below=of sec]  (team) {Team\\\scriptsize\textit{avg.\ 1.4 per section}};
 
-        \end{itemize}
-    \
-    \pause
-        
-        \item Tokyo's public sector was occupied by disproportionately high-educated employees.\hypertarget{Descriptive}{}
+\draw[arrow] (to)   -- (dept);
+\draw[arrow] (dept) -- (sec);
+\draw[arrow] (sec)  -- (team);
 
-        \begin{itemize}
-            \item 40\% of employees graduated from university. 
-            
-            $\leftarrow$National average: 3\%.
-        \end{itemize}         
+\node[align=center, font=\tiny, text=black!55, below=0.4cm of team]
+  {Manager · Engineer\\Clerk · Part-time};
+\draw[-{Stealth[length=1.5mm]}, black!30] (team.south) -- ++(0,-0.25);
+\end{tikzpicture}
+\end{column}
 
-        
-    \end{itemize}
-\end{transitionframe}
+%% ── RIGHT: Identification figure ─────────────────────────────────
+\begin{column}{0.70\textwidth}
+\centering
+\begin{tikzpicture}[
+  occ/.style={rectangle, draw=black!60, rounded corners=2pt, align=center,
+              font=\footnotesize, minimum width=1.5cm, minimum height=0.55cm},
+  drafted/.style={rectangle, draw=red!55, fill=red!8, rounded corners=2pt, align=center,
+                  font=\footnotesize, minimum width=1.5cm, minimum height=0.55cm,
+                  text=red!65},
+  team/.style={rectangle, draw=blue!50, fill=blue!8, rounded corners=3pt, align=center,
+               font=\small\bfseries, minimum width=2.0cm, minimum height=0.65cm},
+  tline/.style={thick, black!40}
+]
 
-\begin{transitionframe}{Japan's Conscription System}
-    \begin{wideitemize}
-        \item Tokyo civil service began losing employees to the Japanese military starting in 1937.
+% Surrounding box with Section label
+\draw[rounded corners=5pt, thick, black!35] (-4.0, -3.0) rectangle (4.0, 3.0);
+\node[font=\scriptsize\bfseries, fill=white, text=black!55, inner sep=2pt] at (0, 3.0)
+  {Section};
 
-        \item Reservists were required to leave their civilian positions to serve in the military.
+% =====================
+% TOP TREE: Team A
+% =====================
+\node[team] (kA) at (0, 2.2) {Team A};
 
-        \textit{Reservists}: Veterans who had previously trained or served.
+\node[occ]     (mA) at (-2.7, 0.85) {Manager};
+\node[drafted] (eA) at (-0.9, 0.85) {Engineer};
+\node[drafted] (cA) at ( 0.9, 0.85) {Clerk};
+\node[occ]     (pA) at ( 2.7, 0.85) {Part-time};
 
-        \begin{itemize}
-            \item Approx. 800 employees left their positions during this period.
-            \item High level civil servants were exempt from drafting.
-        \end{itemize}
+\draw[red!55, thick] (eA.north west) -- (eA.south east);
+\draw[red!55, thick] (cA.north west) -- (cA.south east);
 
-        \item Neither reservists nor employers could not predict when reservists would be recalled to active duty.
-    \end{wideitemize}
-\end{transitionframe}
+\coordinate (jA) at (0, 1.55);
+\draw[tline] (kA.south) -- (jA);
+\draw[tline] (jA) -- (-2.7, 1.55) -- (mA.north);
+\draw[tline] (jA) -- (-0.9, 1.55) -- (eA.north);
+\draw[tline] (jA) -- ( 0.9, 1.55) -- (cA.north);
+\draw[tline] (jA) -- ( 2.7, 1.55) -- (pA.north);
 
+% ========================
+% BOTTOM TREE: Team B
+% ========================
+\node[team] (kB) at (0, -2.2) {Team B};
 
-\begin{frame}{}
-\input{Background/BalanceTable31}
+\node[occ] (mB) at (-2.7, -0.85) {Manager};
+\node[occ] (eB) at (-0.9, -0.85) {Engineer};
+\node[occ] (cB) at ( 0.9, -0.85) {Clerk};
+\node[occ] (pB) at ( 2.7, -0.85) {Part-time};
+
+\coordinate (jB) at (0, -1.55);
+\draw[tline] (kB.north) -- (jB);
+\draw[tline] (jB) -- (-2.7, -1.55) -- (mB.south);
+\draw[tline] (jB) -- (-0.9, -1.55) -- (eB.south);
+\draw[tline] (jB) -- ( 0.9, -1.55) -- (cB.south);
+\draw[tline] (jB) -- ( 2.7, -1.55) -- (pB.south);
+
+% Legend
+\node[font=\tiny, text=red!65] at (3.2, -2.7)
+  {{\color{red!55}\rule{5mm}{0.5pt}} Drafted};
+
+\end{tikzpicture}
+\end{column}
+
+\end{columns}
+
+\vspace{0.3em}
+\begin{flushright}
+    \hyperlink{balance-test-backup}{\beamerbutton{Balance test (backup)}}
+\end{flushright}
+\end{frame}
+
+\begin{frame}{Tokyo offices across wards}
+  \centering
+  \includegraphics[width=\linewidth,height=0.82\textheight,keepaspectratio]{../Tokyo_Project_Figures/Replacements/MainResults/DescriptiveData/tokyo_office_heatmap.pdf}
 \end{frame}

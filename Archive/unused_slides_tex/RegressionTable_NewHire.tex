@@ -1,10 +1,5 @@
 \begin{table}[ht]
-\[
-Y_{jkt} \sim \mathrm{Poisson}(\lambda_{jkt}), \quad 
-\log\bigl(\mathbb{E}[Y_{jkt}]\bigr) = \log(\lambda_{jkt}) = X_{i,j}\beta + \iota_j + \mu_k + \alpha_t.
-\]
 \centering
-\captionsetup{font=small, labelfont=bf}
 \begin{threeparttable}
 \begin{adjustbox}{width=\textwidth} % Resize table to fit page width
 \begin{tabular}{lccc}
@@ -22,10 +17,10 @@ Num. Observations                     & 5011       & 5012       & 5062       \\
 Marginal effect & 13\% & 16\% & 12\%  \\
 Mean of Control & 3.64 & 3.64 & 3.64 \\
 \( R^2 \)                             & 0.565      & 0.465      & 0.527      \\
-Standard Errors                       & by Office-Year & by Office-Year & by Office-Year \\
+Standard Errors                       & by Section-Year & by Section-Year & by Section-Year \\
 Fixed Effects: Year                   & \checkmark        & \checkmark        & \checkmark        \\
 Fixed Effects: Position               & \checkmark        &            & \checkmark        \\
-Fixed Effects: Division               & \checkmark        & \checkmark        &            \\
+Fixed Effects: Department             & \checkmark        & \checkmark        &            \\
 \bottomrule
 \end{tabular}
 \end{adjustbox}

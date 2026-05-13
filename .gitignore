@@ -1,0 +1,13 @@
+.claude/
+.cursor/
+*.aux
+*.log
+*.fdb_latexmk
+*.fls
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.toc
+*.blg
+*.out

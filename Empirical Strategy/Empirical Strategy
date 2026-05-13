@@ -1,0 +1,52 @@
+\begin{frame}{Empirical strategy: OLS with fixed effects}
+    \begin{itemize}[<+->]
+        \item For each outcome variable, we estimate:
+    \end{itemize}
+
+    \[
+    Y_{o k t} = \beta \cdot \text{Draftees}_{o k t}
+    + \theta \cdot \text{Workers}_{k t}
+    + \alpha_o + \gamma_k + \varepsilon_{o k t}
+    \]
+
+    \begin{itemize}[<+->]
+        \item $Y_{o k t}$: outcome in occupation $o$, section $k$, and year $t$.
+        \item $\text{Draftees}_{o k t}$: number of drafted workers.
+        \item $\text{Workers}_{k t}$: number of workers in section $k$ in year $t$.
+        \item $\alpha_o$: occupation fixed effects.
+        \item $\gamma_k$: section fixed effects.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Empirical strategy: who is selected for transfer?}
+    \small
+    For each donor office unit-year, worker $i$ chooses among transfer outcomes
+    $j \in \{\text{stay},\text{draft vacancy},\text{non-draft vacancy}\}$:
+
+    \[
+    \Pr(y_{it}=j \mid X_{it}) =
+    \frac{\exp\left(X_{it}'\beta_j\right)}
+    {\sum_{\ell \in \mathcal{J}}\exp\left(X_{it}'\beta_\ell\right)}, \qquad
+    X_{it}'\beta_{\text{stay}} = 0.
+    \]
+
+    \[
+    \begin{aligned}
+    X_{it}'\beta_j
+    &= \beta_{0j}
+    + \beta_{1j}\text{Decor}_{i,t-1}
+    + \beta_{2j}\text{Court}_{i,t-1}
+    + \beta_{3j}\text{Female}_{it} \\
+    &\quad
+    + \beta_{4j}\text{Tenure}_{it}
+    + \beta_{5j}\log(\text{Salary}_{i,t-1}+1)
+    + \lambda_{jt}.
+    \end{aligned}
+    \]
+
+    \begin{itemize}
+        \item Outcomes are estimated separately for leaving at all, within-kyoku transfers, and cross-kyoku transfers.
+        \item $\text{Decoration}$ and $\text{CourtRank}$ are coded 0--8, with 0 for unobserved status.
+        \item $\text{Female}$ is an indicator, $\text{Tenure}$ is years since first observed, and $\lambda_{jt}$ are outcome-specific year fixed effects.
+    \end{itemize}
+\end{frame}
