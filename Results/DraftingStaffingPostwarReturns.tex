@@ -1,0 +1,107 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\definecolor{navyblue}{RGB}{26,43,76}
+\definecolor{accentred}{RGB}{176,58,46}
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamercolor{frametitle}{bg=navyblue,fg=white}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamercolor{itemize item}{fg=accentred}
+\setbeamertemplate{itemize item}{\color{accentred}\textbullet}
+
+\begin{document}
+
+\begin{frame}{Research question}
+  \vfill
+  \begin{center}
+    {\LARGE\bfseries
+    Did offices that hired more people in response to drafting have more
+    former staff return anywhere in the civil service after the war?}
+  \end{center}
+  \vfill
+  \begin{itemize}
+    \item Unit: 1944 destination office $\times$ team $\times$ position cell.
+    \item Staffing response: internal workers plus external new hires.
+    \item Postwar return: a 1944 draftee reappears in any available Tokyo
+          civil-service directory during 1946--1955.
+  \end{itemize}
+  \vfill
+\end{frame}
+
+\begin{frame}{Empirical design}
+  \scriptsize
+  \textbf{Equations}
+  \begin{align*}
+    R_{op} &= \beta S_{op}+\gamma B_{op}+\alpha_s+\lambda_p+\varepsilon_{op}
+      && \text{(OLS)},\\
+    S_{op} &= \pi D_{op}+\gamma B_{op}+\alpha_s+\lambda_p+u_{op}
+      && \text{(first stage)},\\
+    R_{op} &= \beta \widehat S_{op}+\gamma B_{op}+\alpha_s+\lambda_p+\nu_{op}
+      && \text{(second stage)}.
+  \end{align*}
+
+  \vspace{-0.7em}
+  \textbf{Exact variable definitions}
+  \begin{itemize}
+    \item \textbf{Unit $(o,p)$:} a 1944 office ID $\times$ team (kakari)
+          $\times$ normalized position-title cell.
+    \item \textbf{$R_{op}$ --- returning workers:} number of men drafted from
+          the cell in 1944 who appear at least once anywhere in the Tokyo civil
+          service in an available 1946--1955 directory; each man counts once.
+    \item \textbf{$S_{op}$ --- staffing response:} 1944 internal workers plus
+          external new hires. Internal workers are retention in the same section,
+          transfers from another section in the same department, and transfers
+          from another department. A new hire is in his first observed directory
+          year; opening-year office observations are excluded from this category.
+          \textbf{This is a gross response: draftees are not subtracted.}
+    \item \textbf{$D_{op}$ --- instrument:} number of male workers in the cell
+          explicitly marked drafted in the 1944 directory.
+    \item \textbf{$B_{op}$ --- baseline employment:}
+          $\log(1+\text{number of distinct male workers previously observed in
+          the same office ID $\times$ team $\times$ position})$.
+    \item \textbf{Fixed effects:} 1944 section (bureau $\times$ section) and
+          normalized position title. Standard errors are clustered by office ID.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Offices with larger staffing responses had more returnees}
+  \centering
+  \small
+  \begin{threeparttable}
+    \begin{tabular}{lccc}
+      \toprule
+      & OLS & IV & First stage \\
+      \midrule
+      Staffing response
+        & 0.217$^{***}$ & 0.476$^{***}$ & \\
+        & (0.038) & (0.067) & \\
+      No. drafted workers
+        & & & 0.848$^{***}$ \\
+        & & & (0.087) \\
+      \midrule
+      Baseline employment control & Yes & Yes & Yes \\
+      Section and position FE & Yes & Yes & Yes \\
+      Observations & 654 & 654 & 654 \\
+      Offices & 168 & 168 & 168 \\
+      Cluster-robust first-stage $F$ & & 94.8 & \\
+      \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]
+      \tiny
+      \item \textit{Notes:} The outcome is the number of 1944 draftees from the
+      cell observed anywhere in the postwar Tokyo civil service. Staffing
+      response is internal workers plus new hires; draftees are not subtracted.
+      Standard errors, clustered by office, are in parentheses. $^{***}p<0.01$.
+      \item \textit{Interpretation:} The IV estimate implies that one additional
+      draft-induced staffing response predicts 0.48 additional postwar
+      returnees. Because returnees are drawn from the drafted cohort, draft
+      count may affect returns directly; the exclusion restriction is therefore
+      a substantive limitation.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{frame}
+
+\end{document}

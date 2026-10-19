@@ -1,0 +1,89 @@
+\documentclass{beamer}
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{array}
+\begin{document}
+\begin{frame}{Results: Same Section vs.\ Outside}
+\scriptsize\centering\vspace{-0.6em}
+\textbf{Outcome: arrivals from the same ka}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & 0.107$^{***}$ & $-0.028$ & 0.054 & 0.107$^{**}$ \\
+ & (0.020) & (0.035) & (0.015) & (0.017) \\
+Cells & 576 & 240 & 576 & 576 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka; position} \\\bottomrule
+\end{tabular}
+\medskip
+\textbf{Outcome: arrivals from outside the own ka}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.083^{***}$ & $-0.022$ & $-0.006$ & $-0.083^{*}$ \\
+ & (0.024) & (0.015) & (0.022) & (0.012) \\
+Cells & 576 & 558 & 576 & 576 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka; position} \\\bottomrule
+\end{tabular}
+\vspace{0.3em}\raggedright
+{\tiny \textit{Notes:} Separate regressions of each outcome on draft, draft $\times$ log own-ka pool, the pool main effect, supply pools at other organizational distances, kyoku $\times$ ka FE, and position FE. Pool $S$ contains men in the 1942 ka, at the cell's rank or one below, still employed in 1944, excluding men in the destination cell in 1944. Col.\ (1): OLS with ka-clustered inference; col.\ (2): PPML average partial effect; col.\ (3): occupation-based pools; col.\ (4): OLS clustered by kyoku. Stars use Webb wild-cluster bootstrap ($B=9{,}999$), except PPML Wald inference.}
+\end{frame}
+\begin{frame}{Results: Outside Arrivals by Distance, and Total}
+\tiny\centering\vspace{-0.8em}
+\textbf{Outcome: arrivals from other ka in the same kyoku}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.067^{**}$ & $-0.031^{**}$ & $-0.028$ & $-0.067^{*}$ \\
+ & (0.028) & (0.015) & (0.019) & (0.024) \\
+Cells & 576 & 461 & 576 & 576 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka; position} \\\bottomrule
+\end{tabular}
+\smallskip
+\textbf{Outcome: arrivals from other kyoku}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.016$ & $-0.007$ & 0.022 & $-0.016$ \\
+ & (0.013) & (0.005) & (0.010) & (0.016) \\
+Cells & 576 & 432 & 576 & 576 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka; position} \\\bottomrule
+\end{tabular}
+\smallskip
+\textbf{Outcome: total internal arrivals}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & 0.024 & $-0.037^{*}$ & 0.048 & 0.024 \\
+ & (0.036) & (0.020) & (0.025) & (0.019) \\
+Cells & 576 & 558 & 576 & 576 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka; position} \\\bottomrule
+\end{tabular}
+\vspace{0.3em}\raggedright
+{\tiny \textit{Notes:} The empirical model and inference are identical to the preceding table. Outcomes decompose arrivals from outside the own ka into other ka within the same kyoku and other kyoku; total internal arrivals combine all internal source categories.}
+\end{frame}
+\begin{frame}[t]{Balance of internal-transfer sources by pre-draft 1942 stock}
+\centering\scriptsize
+\resizebox{0.98\textwidth}{!}{\begin{tabular}{llrrrrr}
+\toprule
+Era & Source outcome & Large & Small & Difference & $p$ & $N$ \\
+\midrule
+Peacetime & Same kyoku, different ka: count & 6.93 & 0.00 & 6.93 & 0.190 & 24 \\
+(1934--1937) & Different kyoku: count & 64.47 & 47.33 & 17.13 & 0.535 & 24 \\
+& Same kyoku, different ka: share & 0.036 & 0.000 & 0.036$^{*}$ & 0.082 & 23 \\
+& Different kyoku: share & 0.634 & 0.838 & -0.204 & 0.129 & 23 \\
+\addlinespace
+Wartime & Same kyoku, different ka: count & 12.47 & 0.06 & 12.41 & 0.213 & 35 \\
+(1938--1942) & Different kyoku: count & 105.21 & 20.94 & 84.27 & 0.160 & 35 \\
+& Same kyoku, different ka: share & 0.035 & 0.009 & 0.026 & 0.269 & 35 \\
+& Different kyoku: share & 0.558 & 0.521 & 0.037 & 0.731 & 35 \\
+\midrule
+Fixed effects & \multicolumn{6}{c}{None (era-specific large-stock comparison)} \\
+\bottomrule
+\end{tabular}}
+\vspace{0.5em}\raggedright
+{\tiny \textit{Notes:} Office-year source outcomes are compared between destinations above and below the median 1942 named-worker stock (167.5). Difference is large minus small. Era-specific OLS regressions include a large-stock indicator and cluster standard errors by destination office. Counts are mean arrivals per office-year; shares divide each source count by all office-changing transfers. $N$ is the number of office-years. Sample: eight 1944-drafted destination offices observed in 1942 and both eras (four large and four small).}
+\end{frame}
+\end{document}

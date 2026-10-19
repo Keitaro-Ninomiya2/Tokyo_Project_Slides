@@ -1,0 +1,2 @@
+dependent_variable,independent_variable,estimate,std_error,p_value,first_stage_f,internal_replacement_margin,external_replacement_margin,total_replacement_margin,observations,offices
+Internal workers plus new hires,Number of male draftees,0.6135495265705769,0.1402555709555279,1.3235369092367878e-5,19.136345778893293,0.4078540176821253,0.20569550888783747,0.6135495265699628,7409,1323

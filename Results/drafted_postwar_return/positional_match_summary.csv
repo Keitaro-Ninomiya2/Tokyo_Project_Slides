@@ -1,0 +1,7 @@
+level,n_nonmiss,n_match,match_rate
+Same bureau (kyoku),508,136,0.2677165354330709
+Same section (kyoku × ka),572,11,0.019230769230769232
+Same team (kyoku × kakari),152,3,0.019736842105263157
+Same position title,782,5,0.00639386189258312
+Same office (office_id),782,4,0.005115089514066497
+Same office & position title,782,0,0

@@ -1,0 +1,151 @@
+\documentclass{beamer}
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{array}
+\begin{document}
+\begin{frame}{Results: Same Section vs.\ Outside}
+\scriptsize\centering\vspace{-0.6em}
+\textbf{Outcome: arrivals from the same ka}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & 0.074$^{**}$ & $-0.153^{***}$ & 0.049 & 0.074$^{***}$ \\
+ & (0.017) & (0.054) & (0.020) & (0.018) \\
+Cells & 182 & 134 & 182 & 182 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka} \\\bottomrule
+\end{tabular}
+\medskip
+\textbf{Outcome: arrivals from outside the own ka}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.132^{***}$ & $-0.075^{***}$ & $-0.004$ & $-0.132^{*}$ \\
+ & (0.019) & (0.015) & (0.021) & (0.018) \\
+Cells & 182 & 177 & 182 & 182 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka} \\\bottomrule
+\end{tabular}
+\vspace{-0.4em}\raggedright
+{\tiny \textbf{Crosswalk coverage:} The expanded 1938--1943 crosswalk identifies 22 unique drafted ka names with positive average historical stock (conservative links).}\par
+{\tiny \textit{Notes:} Separate regressions of each outcome on draft, draft $\times$ log own-ka pool, the pool main effect, supply pools at other organizational distances, and kyoku $\times$ ka FE. No position fixed effects are included. Pool $S$ contains men in the 1942 ka, at the cell's rank or one below, still employed in 1944, excluding men in the destination cell in 1944. Sample is restricted to destination ka names with at least one strict historical roster match; unmatched own-ka supply is NA. Col.\ (1): OLS with ka-clustered inference; col.\ (2): PPML average partial effect; col.\ (3): occupation-based pools; col.\ (4): OLS clustered by kyoku. Stars use Webb wild-cluster bootstrap ($B=9{,}999$), except PPML Wald inference.}
+\end{frame}
+\begin{frame}{Results: Outside Arrivals by Distance, and Total}
+\tiny\centering\vspace{-0.8em}
+\textbf{Outcome: arrivals from other ka in the same kyoku}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.115^{**}$ & $-0.044^{***}$ & $-0.014$ & $-0.115$ \\
+ & (0.023) & (0.008) & (0.017) & (0.025) \\
+Cells & 182 & 162 & 182 & 182 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka} \\\bottomrule
+\end{tabular}
+\smallskip
+\textbf{Outcome: arrivals from other kyoku}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.016$ & $-0.053^{***}$ & 0.010 & $-0.016$ \\
+ & (0.018) & (0.018) & (0.007) & (0.020) \\
+Cells & 182 & 170 & 182 & 182 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka} \\\bottomrule
+\end{tabular}
+\smallskip
+\textbf{Outcome: total internal arrivals}\\[1pt]
+\begin{tabular}{p{2.1cm}*{4}{>{\centering\arraybackslash}p{1.6cm}}}
+\toprule & (1) & (2) & (3) & (4) \\
+ & OLS & PPML & Occ.\ pools & Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.057^{*}$ & $-0.155^{***}$ & 0.045 & $-0.057$ \\
+ & (0.025) & (0.030) & (0.029) & (0.020) \\
+Cells & 182 & 177 & 182 & 182 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka} \\\bottomrule
+\end{tabular}
+\vspace{0.2em}\raggedright
+{\tiny \textbf{Crosswalk coverage:} The expanded 1938--1943 crosswalk identifies 22 unique drafted ka names with positive average historical stock (conservative links).}\par
+{\tiny \textit{Notes:} The empirical model and inference are identical to the preceding table. Outcomes decompose arrivals from outside the own ka into other ka within the same kyoku and other kyoku; total internal arrivals combine all internal source categories.}
+\end{frame}
+\begin{frame}[t]{Balance of internal-transfer sources by pre-draft 1942 stock}
+\centering\scriptsize
+\resizebox{0.98\textwidth}{!}{\begin{tabular}{llrrrrr}
+\toprule
+Era & Source outcome & Large & Small & Difference & $p$ & $N$ \\
+\midrule
+Peacetime & Same kyoku, different ka: count & 6.93 & 0.00 & 6.93 & 0.190 & 24 \\
+(1934--1937) & Different kyoku: count & 64.47 & 47.33 & 17.13 & 0.535 & 24 \\
+& Same kyoku, different ka: share & 0.036 & 0.000 & 0.036$^{*}$ & 0.082 & 23 \\
+& Different kyoku: share & 0.634 & 0.838 & -0.204 & 0.129 & 23 \\
+\addlinespace
+Wartime & Same kyoku, different ka: count & 12.47 & 0.06 & 12.41 & 0.213 & 35 \\
+(1938--1942) & Different kyoku: count & 105.21 & 20.94 & 84.27 & 0.160 & 35 \\
+& Same kyoku, different ka: share & 0.035 & 0.009 & 0.026 & 0.269 & 35 \\
+& Different kyoku: share & 0.558 & 0.521 & 0.037 & 0.731 & 35 \\
+\midrule
+Fixed effects & \multicolumn{6}{c}{None (era-specific large-stock comparison)} \\
+\bottomrule
+\end{tabular}}
+\vspace{0.5em}\raggedright
+{\tiny \textit{Notes:} Office-year source outcomes are compared between destinations above and below the median 1942 named-worker stock (167.5). Difference is large minus small. Era-specific OLS regressions include a large-stock indicator and cluster standard errors by destination office. Counts are mean arrivals per office-year; shares divide each source count by all office-changing transfers. $N$ is the number of office-years. Sample: eight 1944-drafted destination offices observed in 1942 and both eras (four large and four small), a further restriction within the 11 unique drafted destination ka with positive historical stock in the revised crosswalk.}
+\end{frame}
+\begin{frame}[t]{Corrected hierarchy: count outcomes with log pool}
+\centering\tiny\vspace{-0.5em}
+\textbf{Outcome: outside-own-ka arrivals}\\[-1pt]
+\begin{tabular}{lrrrr}\toprule
+ & (1) OLS & (2) PPML & (3) Occ. pools & (4) Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.149^{**}$ & $-0.099^{***}$ & $0.017$ & $-0.149^{*}$ \\
+ & $(0.041)$ & $(0.028)$ & $(0.014)$ & $(0.045)$ \\
+Cells & 216 & 216 & 216 & 216 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka + normalized position} \\\bottomrule\end{tabular}
+\par\smallskip
+\textbf{Outcome: external hires}\\[-1pt]
+\begin{tabular}{lrrrr}\toprule
+ & (1) OLS & (2) PPML & (3) Occ. pools & (4) Kyoku cl. \\\midrule
+Draft $\times$ log pool & $-0.286^{*}$ & $-0.273^{**}$ & $-0.076^{**}$ & $-0.286$ \\
+ & $(0.115)$ & $(0.117)$ & $(0.015)$ & $(0.108)$ \\
+Cells & 216 & 216 & 216 & 216 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka + normalized position} \\\bottomrule\end{tabular}
+\vspace{0.4em}\raggedright
+{\tiny \textit{Notes:} Corrected 1944 kyoku/ka assignments and expanded 1938--1943 Fu--Shi crosswalk. All columns use the common 216-cell sample. Columns (1), (2), and (4) interact draft count with $\log(S_i+1)$; column (3) uses the occupation-specific pool $\log(S_{pos}+1)$. Column (2) reports the PPML coefficient rescaled to the OLS outcome scale. Pool stock is the linked 1942--1944 workforce by 1942 ka group at rank $r$ or $r{-}1$, with destination-cell incumbents excluded. External hires are 1944 personnel not observed in any earlier directory. Parentheses contain cluster-robust standard errors; stars use Webb wild-cluster bootstrap $p$-values in columns (1), (3), and (4), and cluster-robust Wald $p$-values in column (2) (* $p<0.10$, ** $p<0.05$, *** $p<0.01$).}
+\end{frame}
+\begin{frame}[t]{Corrected hierarchy: count outcomes and raw pool stock}
+\centering\tiny\vspace{-0.5em}
+\textbf{Outcome: outside-own-ka arrivals}\\[-1pt]
+\begin{tabular}{lrrrr}\toprule
+ & (1) OLS & (2) PPML & (3) Occ. pools & (4) Kyoku cl. \\\midrule
+Draft $\times$ pool/10 & $-0.048^{***}$ & $-0.028^{***}$ & $0.024$ & $-0.048^{***}$ \\
+ & $(0.014)$ & $(0.010)$ & $(0.015)$ & $(0.010)$ \\
+Cells & 216 & 216 & 216 & 216 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka + normalized position} \\\bottomrule\end{tabular}
+\smallskip
+\textbf{Outcome: external hires}\\[-1pt]
+\begin{tabular}{lrrrr}\toprule
+ & (1) OLS & (2) PPML & (3) Occ. pools & (4) Kyoku cl. \\\midrule
+Draft $\times$ pool/10 & $-0.079^{**}$ & $-0.051$ & $-0.105^{***}$ & $-0.079^{**}$ \\
+ & $(0.036)$ & $(0.034)$ & $(0.035)$ & $(0.032)$ \\
+Cells & 216 & 216 & 216 & 216 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka + normalized position} \\\bottomrule\end{tabular}
+\vspace{0.4em}\raggedright
+{\tiny \textit{Notes:} Corrected 1944 kyoku/ka assignments and expanded 1938--1943 Fu--Shi crosswalk. All columns use a common 216-cell sample. The dependent variables are counts. External hires are 1944 personnel not observed in any earlier directory. Pool stock is entered in raw units of ten workers; coefficients therefore give the effect of ten additional pool workers per additional drafted worker. Col.\ (3) uses occupation-specific pools. Parentheses contain cluster-robust standard errors; stars use conventional cluster-robust $p$-values (* $p<0.10$, ** $p<0.05$, *** $p<0.01$).}
+\end{frame}
+\begin{frame}[t]{Corrected hierarchy: outside arrivals by distance}
+\centering\tiny\vspace{-0.5em}
+\textbf{Outcome: arrivals from other kyoku}\\[-1pt]
+\begin{tabular}{lrrrr}\toprule
+ & (1) OLS & (2) PPML & (3) Occ. pools & (4) Kyoku cl. \\\midrule
+Draft $\times$ pool/10 & $-0.030^{*}$ & $-0.018^{**}$ & $0.024$ & $-0.030$ \\
+ & $(0.014)$ & $(0.008)$ & $(0.015)$ & $(0.016)$ \\
+Cells & 216 & 216 & 216 & 216 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka + normalized position} \\\bottomrule\end{tabular}
+\smallskip
+\textbf{Outcome: total internal arrivals}\\[-1pt]
+\begin{tabular}{lrrrr}\toprule
+ & (1) OLS & (2) PPML & (3) Occ. pools & (4) Kyoku cl. \\\midrule
+Draft $\times$ pool/10 & $-0.073^{***}$ & $-0.055^{***}$ & $0.032$ & $-0.073^{**}$ \\
+ & $(0.024)$ & $(0.019)$ & $(0.047)$ & $(0.023)$ \\
+Cells & 216 & 216 & 216 & 216 \\
+Fixed effects & \multicolumn{4}{c}{Kyoku $\times$ ka + normalized position} \\\bottomrule\end{tabular}
+\vspace{0.4em}\raggedright
+{\tiny \textit{Notes:} Corrected 1944 kyoku/ka assignments and expanded 1938--1943 Fu--Shi office matching. All columns use the common 216-cell sample retained by the same-ka PPML specification. Outcomes are counts. Pool stock is entered in raw units of ten workers, so coefficients give the effect of ten additional pool workers per additional drafted worker. ``Total internal arrivals'' combines same-ka, other-ka/same-kyoku, and other-kyoku sources. Col.\ (3) uses occupation-specific pools. Parentheses contain cluster-robust standard errors; stars use conventional cluster-robust $p$-values (* $p<0.10$, ** $p<0.05$, *** $p<0.01$).}
+\end{frame}
+\end{document}

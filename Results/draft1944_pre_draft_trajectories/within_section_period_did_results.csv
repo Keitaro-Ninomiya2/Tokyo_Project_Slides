@@ -1,0 +1,25 @@
+outcome,variable,specification,term,label,estimate,se,p,n
+Workers,n_workers,Cell + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,29.468065695480526,7.659519156583018,1.3872526204272462e-4,6776
+Workers,n_workers,Cell + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,1.56847162304354,9.39540134623865,0.8675002983996065,6776
+Workers,n_workers,Section/position + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,16.4108878471532,5.901064986290537,0.005546024923127527,10108
+Workers,n_workers,Section/position + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,4.114152282899997,1.303020407916343,0.0016513359188996682,10108
+Total internal,n_internal_total,Cell + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,12.966557992752072,3.938265621830924,0.0010803428650153534,6776
+Total internal,n_internal_total,Cell + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,-1.0424906118638329,4.309921185290143,0.8089943383877753,6776
+Total internal,n_internal_total,Section/position + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,9.879519058681657,2.963601307184481,8.965107209786874e-4,10108
+Total internal,n_internal_total,Section/position + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,0.11687263467360465,0.4112839021419976,0.7763569246444548,10108
+Retention,n_retention,Cell + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,8.373089935935269,2.5204655647037986,9.747795315364237e-4,6776
+Retention,n_retention,Cell + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,2.2188082944808802,1.0526812388346471,0.03566500541493197,6776
+Retention,n_retention,Section/position + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,6.753952880746204,1.8350396063199665,2.4828035544734964e-4,10108
+Retention,n_retention,Section/position + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,0.21884605687367953,0.21340930454068144,0.3054475947366469,10108
+Same dept.,n_transfer_same_dept,Cell + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,2.8491701688654816,1.7310525143878144,0.100556450750312,6776
+Same dept.,n_transfer_same_dept,Cell + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,-0.7222375855119836,1.2305892892966268,0.5575952966184632,6776
+Same dept.,n_transfer_same_dept,Section/position + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,2.7593238170813135,1.4160524060213988,0.05169083146791744,10108
+Same dept.,n_transfer_same_dept,Section/position + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,-0.23692449489708822,0.2151962064474121,0.2712397719961959,10108
+Diff. dept.,n_transfer_diff_dept,Cell + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,1.7442978879501556,0.6479900975619058,0.007400079376987602,6776
+Diff. dept.,n_transfer_diff_dept,Cell + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,-2.5390613208293793,3.5123885434644815,0.4701663263555014,6776
+Diff. dept.,n_transfer_diff_dept,Section/position + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,0.3662423608587712,0.42080933657428676,0.3843810000355704,10108
+Diff. dept.,n_transfer_diff_dept,Section/position + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,0.13495107269609594,0.1759153973539964,0.4432260175944711,10108
+New hires,n_new_hires,Cell + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,7.136749285982479,2.908370608476247,0.014553223535755727,6776
+New hires,n_new_hires,Cell + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,2.0366952829045,2.3947070183223578,0.39555039430289984,6776
+New hires,n_new_hires,Section/position + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,2.861188072474676,1.7413023581832872,0.10074728214068532,10108
+New hires,n_new_hires,Section/position + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,-0.2233569647532586,0.3840178170221969,0.5609779701921295,10108

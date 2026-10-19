@@ -1,0 +1,47 @@
+﻿kyoku44,ka44,canonical_bureau44,canonical_ka44,drafted_office,drafted_men44,staff44,listed_in_crosswalk,n_crosswalk_sources,matched_to_historical_roster,n_positive_predecessor_offices,supply_stock,matched_sources
+交通,経理課,交通,経理課,True,29,259,True,3,True,3,93,Shi :: 電気局 :: 主計課 [group+ka] | Shi :: 電気局 :: 経理課 [group+ka] | Shi :: 電気局 :: 会計課 [group+ka]
+教育,庶務課,教育,庶務課,True,16,114,True,4,True,2,78,Shi :: 教育局 :: 庶務課 [group+ka] | Shi :: 教育局 :: 教化課 [group+ka]
+教育,第一課,教育,第一課,True,16,77,True,4,True,1,33,Shi :: 教育局 :: 学校施設課 [group+ka]
+教育,第二課,教育,第二課,True,7,46,True,2,True,1,19,Shi :: 教育局 :: 中等教育課 [group+ka]
+水道,工事課,水道,工事課,True,43,80,True,4,True,1,48,Shi :: 水道局 :: 拡張課 [group+ka]
+水道,庶務課,水道,庶務課,True,19,107,True,3,True,1,1,Shi :: 水道局 :: 庶務課 [group+ka]
+水道,給水課,水道,給水課,True,16,60,True,1,True,1,54,Shi :: 水道局 :: 給水課 [group+ka]
+港湾,工事課,港湾,工事課,True,81,177,True,3,True,1,80,Shi :: 港湾局 :: 築港課 [group+ka]
+計画,庶務課,計画,庶務課,True,73,204,True,2,True,1,32,Shi :: 土木局 :: 庶務課 [group+ka]
+計画,河川課,計画,河川課,True,40,208,True,2,True,1,40,Shi :: 土木局 :: 治水課 [group+ka]
+計画,道路課,計画,道路課,True,114,238,True,4,True,2,120,Shi :: 土木局 :: 道路管理課 [group+ka] | Shi :: 土木局 :: 道路建設課 [group+ka]
+交通,保線課,交通,保線課,True,15,53,True,1,False,0,0,
+交通,車輌課,交通,車輌課,True,7,47,True,3,False,0,0,
+交通,運輸課,交通,運輸課,True,12,98,True,4,False,0,0,
+交通,電気課,交通,電気課,True,28,191,True,4,False,0,0,
+水道,下水課,水道,下水課,True,35,101,True,1,False,0,0,
+水道,業務課,水道,業務課,True,14,75,True,1,False,0,0,
+経済,商工課,経済,商工課,True,45,203,True,2,False,0,0,
+経済,資材課,経済,資材課,True,5,52,True,1,False,0,0,
+経済,食料課,経済,食料課,True,4,61,True,7,False,0,0,
+計画,公園緑地課,計画,公園緑地課,True,47,147,True,3,False,0,0,
+計画,都市計画課,計画,都市計画課,True,12,44,True,1,False,0,0,
+交通,総務課,交通,総務課,False,0,0,True,3,True,1,44,Shi :: 電気局 :: 調査課 [group+ka]
+官房,会計課,官房,会計課,False,0,0,True,3,True,1,30,Shi :: 経理局 :: 会計課 [group+ka]
+官房,健民課,官房,健民課,False,0,0,True,2,True,1,30,Shi :: 健民局 :: 体力課 [group+ka]
+官房,厚生課,官房,厚生課,False,0,0,True,4,True,3,48,Shi :: 健民局 :: 軍事援護課 [group+ka] | Shi :: 健民局 :: 母子課 [group+ka] | Shi :: 健民局 :: 厚生課 [group+ka]
+官房,文書課,官房,文書課,False,0,0,True,5,True,1,43,Shi :: 健民局 :: 庶務課 [group+ka]
+官房,用度課,官房,用度課,False,0,0,True,2,True,2,28,Shi :: 経理局 :: 用品課 [group+ka] | Shi :: 経理局 :: 購買課 [group+ka]
+官房,財務課,官房,財務課,False,0,0,True,3,True,1,83,Shi :: 経理局 :: 収納課 [group+ka]
+官房,防疫課,官房,防疫課,False,0,0,True,2,True,1,46,Shi :: 健民局 :: 防疫課 [group+ka]
+教育,学校体育課,教育,学校体育課,False,0,0,True,3,True,1,20,Shi :: 教育局 :: 学校体育課 [group+ka]
+港湾,総務課,港湾,総務課,False,0,0,True,2,True,2,85,Shi :: 港湾局 :: 庶務課 [group+ka] | Shi :: 港湾局 :: 港務所 [group+ka]
+防衛,営繕課,防衛,営繕課,False,0,0,True,6,True,1,33,Shi :: 教育局 :: 学校施設課 [group+ka]
+官房,人事課,官房,人事課,False,0,0,True,5,False,0,0,
+官房,振興課,官房,振興課,False,0,0,True,6,False,0,0,
+官房,清掃課,官房,清掃課,False,0,0,True,3,False,0,0,
+官房,監理課,官房,監理課,False,0,0,True,3,False,0,0,
+官房,考査課,官房,考査課,False,0,0,True,2,False,0,0,
+官房,衛生課,官房,衛生課,False,0,0,True,3,False,0,0,
+経済,用品課,経済,用品課,False,0,0,True,4,False,0,0,
+経済,総務課,経済,総務課,False,0,0,True,4,False,0,0,
+経済,農林課,経済,農林課,False,0,0,True,4,False,0,0,
+防衛,企画課,防衛,企画課,False,0,0,True,2,False,0,0,
+防衛,建築課,防衛,建築課,False,0,0,True,1,False,0,0,
+防衛,設備課,防衛,設備課,False,0,0,True,4,False,0,0,
+防衛,防火改修課,防衛,防火改修課,False,0,0,True,1,False,0,0,

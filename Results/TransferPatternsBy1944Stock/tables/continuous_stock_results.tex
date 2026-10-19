@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Continuous 1944 Staff Stock and Transfer Patterns}
+\label{tab:continuous-stock}
+\small
+\begin{threeparttable}
+\begin{tabular}{lrrrr}
+\toprule
+Outcome & \multicolumn{2}{c}{Peacetime stock slope} & \multicolumn{2}{c}{Wartime change} \\
+& Coef. & SE & Coef. & SE \\
+\midrule
+Same kyoku, different ka: count & -0.143 & 0.458 & -0.196 & 0.317 \\
+Different kyoku: count & -0.097 & 0.202 & 0.207 & 0.429 \\
+Total transfers: count & -0.186 & 0.241 & 0.411$^{**}$ & 0.208 \\
+Same kyoku, different ka: share & 0.007 & 0.030 & -0.027 & 0.024 \\
+Different kyoku: share & 0.065 & 0.050 & -0.084 & 0.120 \\
+Transfer rate & -0.139$^{***}$ & 0.040 & 0.152$^{**}$ & 0.053 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Regressors are log 1944 destination-office staff stock and its interaction with a wartime indicator. All models include year fixed effects and cluster standard errors by destination office. Count outcomes use PPML. Shares and rates use OLS weighted by the number of workers linked to the prior year. There are 75 office-years (74 for share outcomes). The wartime-change column tests whether the stock gradient differs from the 1934--1937 gradient. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

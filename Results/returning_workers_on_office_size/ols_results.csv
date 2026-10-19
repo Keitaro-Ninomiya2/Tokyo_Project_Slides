@@ -1,0 +1,3 @@
+specification,dependent_variable,independent_variable,estimate,std_error,p_value,observations,offices
+Unadjusted,Number of 1944 draftees returning in 1946-1955,"Total workers in 1944 cell, including draftees",0.11286168493773047,0.02193630332420919,7.43648553031213e-7,664,168
+Section and position FE + baseline employment,Number of 1944 draftees returning in 1946-1955,"Total workers in 1944 cell, including draftees",0.10332854270228295,0.021261396953217847,2.7539305098468504e-6,654,168

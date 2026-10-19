@@ -1,0 +1,36 @@
+\documentclass[handout,aspectratio=169]{beamer}
+\usepackage{booktabs}
+\definecolor{navyblue}{RGB}{26,43,76}\definecolor{accentred}{RGB}{176,58,46}
+\usetheme{default}\usecolortheme{dove}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}{}
+\setbeamercolor{frametitle}{bg=navyblue,fg=white}\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{frametitle}{\nointerlineskip\begin{beamercolorbox}[wd=\paperwidth,sep=.2cm,leftskip=.5cm]{frametitle}\usebeamerfont{frametitle}\insertframetitle\end{beamercolorbox}}
+\setbeamercolor{itemize item}{fg=accentred}
+\begin{document}
+\begin{frame}[t]{Baseline balance: future 1944 draft intensity}
+\centering\scriptsize
+\begin{tabular}{lrrrrr}\toprule
+Pre-war outcome & Coef. & SE & $t$ & $p$ & $N$\\\midrule
+Female share & -0.0002 & 0.0001 & -1.50 & 0.152 & 571\\
+New hires & -0.0987 & 0.1263 & -0.78 & 0.446 & 571\\
+Promoted workers & 0.0132 & 0.0087 & 1.53 & 0.146 & 571\\
+Internal transfers & 1.1205$^{**}$ & 0.4533 & 2.47 & 0.025 & 571\\
+Workers & 1.1397 & 0.8141 & 1.40 & 0.181 & 571\\
+Average rank & 0.0000 & 0.0000 & 0.00 & 1.000 & 571\\
+\midrule
+Fixed effects & \multicolumn{5}{c}{Section + position + year} \\\bottomrule
+\end{tabular}
+\vspace{0.5em}\raggedright
+{\tiny \textit{Notes:} Each row is a separate OLS regression of the 1934--1937 outcome on the number of men drafted from the office in 1944. Models include section, position, and year fixed effects and control for log office headcount, except when headcount is the outcome. Standard errors are clustered by office (30 clusters).}
+\end{frame}
+\begin{frame}[t]{Baseline donor-office promotion difference}
+\centering\vspace{1em}
+\begin{tabular}{lrrrrr}\toprule
+Pre-war outcome & Coef. & SE & $t$ & $p$ & $N$\\\midrule
+Promoted workers & 0.0042$^{***}$ & 0.0009 & 4.88 & $<0.001$ & 159\\
+\midrule
+Fixed effects & \multicolumn{5}{c}{Section + occupation + year} \\\bottomrule
+\end{tabular}
+\vspace{0.7em}\raggedright
+{\tiny \textit{Notes:} OLS regression of pre-war promoted-worker counts on an indicator for offices that later sent at least one worker to a drafted office during 1938--1944. The model includes section, occupation, and year fixed effects and clusters standard errors by office (16 clusters). The sample contains 15 future donor offices and one non-donor office.}
+\end{frame}
+\end{document}

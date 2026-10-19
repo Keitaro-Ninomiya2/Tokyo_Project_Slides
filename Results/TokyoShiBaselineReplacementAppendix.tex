@@ -1,0 +1,30 @@
+\begin{frame}[t]{Peace-time cell departures and replacement margins}
+    \tiny
+    \centering
+    \begin{threeparttable}
+    \begin{tabular}{lcccc|c}
+        \toprule
+        \multicolumn{6}{l}{\textbf{Tokyo-Shi baseline, 1929--1937}} \\[2pt]
+        & \multicolumn{4}{c|}{\textit{Internal staff response}} & \textit{External} \\ 
+        \cmidrule(lr){2-5}\cmidrule(lr){6-6}
+         & Total & \multicolumn{3}{c|}{--- decomposition ---} & \\ 
+         & internal & Retention & Same dept. & Diff. dept. & New hires \\ 
+         &  & (same section) & (cross-section) & (cross-bureau) & \\ 
+        \midrule
+        Natural male cell departures & 0.0258 & 0.1774$^{**}$ & -0.0583$^{*}$ & -0.0933$^{**}$ & 0.0054 \\
+         & (0.0692) & (0.0789) & (0.0312) & (0.0364) & (0.0244) \\
+        \midrule
+        Observations & \multicolumn{5}{c}{3,950} \\
+        Natural male cell departures & \multicolumn{5}{c}{3,742} \\
+        Year FE & \multicolumn{5}{c}{Yes} \\ 
+        Section FE & \multicolumn{5}{c}{Yes} \\ 
+        Position FE & \multicolumn{5}{c}{Yes} \\ 
+        Baseline male employment (log) & \multicolumn{5}{c}{Yes} \\ 
+        \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]
+        \tiny
+        \item \textit{Notes:} OLS regressions using Tokyo-Shi directory transitions, 1929--1937. Unit of observation: destination office $\times$ kyoku $\times$ ka $\times$ kakari $\times$ occupation $\times$ year. Observations are regression cell-years, not transfer counts. The treatment is the number of male workers in the same full cell in $t-1$ who are no longer in that exact cell in year $t$, excluding draft-coded rows. Outcomes use the same replacement-margin definitions as the wartime draft table: retention within the same ka group, transfers from a different ka group within the same normalized kyoku group, transfers from a different normalized kyoku group, and new hires excluding first observed office-years. All specifications include year, section, and position fixed effects and control for log cumulative male baseline employment. Standard errors clustered by office in parentheses. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
+    \end{tablenotes}
+    \end{threeparttable}
+\end{frame}

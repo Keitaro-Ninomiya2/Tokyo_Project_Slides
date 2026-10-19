@@ -1,0 +1,4 @@
+term,rank,estimate,std_error,p_value,observations,offices
+n_drafted_male:rank_groupLower rank,Lower rank,-1.3359119160010746,0.5454007876477522,0.01445216535486714,7409,1323
+n_drafted_male:rank_groupMiddle/other rank,Middle/other rank,-0.287941992840472,0.1212733929910221,0.017739010932853343,7409,1323
+n_drafted_male:rank_groupHigher rank,Higher rank,3.1623142159520805,1.528580131966726,0.038780984638218996,7409,1323

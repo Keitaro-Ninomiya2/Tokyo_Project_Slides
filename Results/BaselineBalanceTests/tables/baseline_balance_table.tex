@@ -1,0 +1,56 @@
+\begin{table}[htbp]
+\centering
+\caption{Pre-War Characteristics (1934--1937) by Future Drafting Status}
+\label{tab:balance}
+\scriptsize
+\begin{threeparttable}
+\textbf{Panel A: Unconditional comparison}\par\smallskip
+\begin{tabular}{lrrrrrr}
+\toprule
+& \multicolumn{2}{c}{Drafted in 1944} & \multicolumn{2}{c}{Not drafted} &&\\
+& Mean & SD & Mean & SD & Difference & $p$-value\\
+\midrule
+Female share & 0.014 & 0.075 & 0.027 & 0.089 & -0.013 & 0.373\\
+New hires & 5.436 & 23.292 & 9.846 & 33.547 & -4.410 & 0.422\\
+Promoted workers & 0.330 & 2.205 & 0.000 & 0.000 & 0.330 & $<0.001$\\
+Internal transfers & 91.293 & 233.354 & 110.872 & 203.717 & -19.579 & 0.565\\
+Workers & 104.704 & 249.954 & 127.795 & 228.190 & -23.091 & 0.543\\
+Average rank & 2.146 & 0.795 & 2.103 & 0.680 & 0.043 & 0.704\\
+\midrule
+Offices & \multicolumn{2}{c}{22} & \multicolumn{2}{c}{8} &&\\
+Observations & \multicolumn{2}{c}{734} & \multicolumn{2}{c}{39} &&\\
+\bottomrule
+\end{tabular}
+
+\bigskip
+\textbf{Panel B: Conditional comparison}\par\smallskip
+\begin{tabular}{lrrrrr}
+\toprule
+& Coef. & SE & $t$ & $p$-value & $N$\\
+\midrule
+Female share & -0.0002 & 0.0001 & -1.50 & 0.152 & 571\\
+New hires & -0.0987 & 0.1263 & -0.78 & 0.446 & 571\\
+Promoted workers & 0.0132 & 0.0087 & 1.53 & 0.146 & 571\\
+Internal transfers & 1.1205$^{**}$ & 0.4533 & 2.47 & 0.025 & 571\\
+Workers & 1.1397 & 0.8141 & 1.40 & 0.181 & 571\\
+Average rank & 0.0000 & 0.0000 & 0.00 & 1.000 & 571\\
+\bottomrule
+\end{tabular}
+
+\bigskip
+\textbf{Panel C: Pre-war promotion by future donor status}\par\smallskip
+\begin{tabular}{lrrrrr}
+\toprule
+& Coef. & SE & $t$ & $p$-value & $N$\\
+\midrule
+Promoted workers & 0.0042$^{***}$ & 0.0009 & 4.88 & $<0.001$ & 159\\
+\midrule
+Future donor offices & \multicolumn{5}{l}{15 offices}\\
+Non-donor offices & \multicolumn{5}{l}{1 office}\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} The sample is restricted to offices observable in 1934--1937 and 1944. Panel A reports unconditional means. Panel B regresses each characteristic on the 1944 male draft count with section, position, and year fixed effects; it controls for log office headcount except when headcount is the outcome. Standard errors are clustered by office (30 clusters). Panel C regresses pre-war promotions on future donor status with section, occupation, and year fixed effects and office-clustered standard errors (16 clusters). $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

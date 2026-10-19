@@ -1,0 +1,5 @@
+specification,outcome,term,estimate,std_error,p_value,n,n_offices
+Return count: year FE only,returned_same,drafted_1944,0.00281664947726409,0.00177535492805852,0.113379475306816,1251,417
+Return count: + 1944 office size,returned_same,drafted_1944,0.00626399738535488,0.00325493741644224,0.0549786796942752,1251,417
+Any-government return count: + office size,returned_any,drafted_1944,0.105460434594333,0.0149710950655007,7.77135573686123e-12,1251,417
+Same-office return rate: + office size,same_return_rate,drafted_1944,0.000108903480345288,3.16052071091561e-05,0.000688863498999521,627,209

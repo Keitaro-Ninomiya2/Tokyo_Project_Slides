@@ -1,0 +1,37 @@
+outcome,variable,specification,term,estimate,se,p_value,n,sections,departments
+Workers,n_workers,Department + occupation + year FE,draft_treatment_count:war_period,2.813774352250585,0.5956320878666279,5.726744231269643e-6,490,142,15
+Workers,n_workers,Department + occupation + year FE,draft_treatment_count:mass_drafting_year,0.7242064482871131,0.25600474592208916,0.005383935964637838,490,142,15
+Workers,n_workers,Department + team + occupation + year FE,draft_treatment_count:war_period,3.0088658820526555,0.6323549308758065,5.336654194038978e-6,400,142,15
+Workers,n_workers,Department + team + occupation + year FE,draft_treatment_count:mass_drafting_year,0.7269345395084577,0.3220908190559626,0.025763143566469287,400,142,15
+Workers,n_workers,Section + occupation + year FE,draft_treatment_count:war_period,1.3933786994944573,1.4600250264884547,0.34227747451671964,471,142,15
+Workers,n_workers,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,0.7187879553670119,0.25054533661428097,0.0050551527960433764,471,142,15
+Total internal,n_internal_total,Department + occupation + year FE,draft_treatment_count:war_period,2.033904161674405,0.535316948049418,2.1853495830288222e-4,490,142,15
+Total internal,n_internal_total,Department + occupation + year FE,draft_treatment_count:mass_drafting_year,0.21075844171768415,0.09080516774294813,0.021785268640707792,490,142,15
+Total internal,n_internal_total,Department + team + occupation + year FE,draft_treatment_count:war_period,2.1825827660583483,0.5873638360155514,3.0497719193261943e-4,400,142,15
+Total internal,n_internal_total,Department + team + occupation + year FE,draft_treatment_count:mass_drafting_year,0.25910110083248317,0.12440499724187247,0.03933179233151606,400,142,15
+Total internal,n_internal_total,Section + occupation + year FE,draft_treatment_count:war_period,0.8680412783827678,1.1860431219979497,0.46600637953745616,471,142,15
+Total internal,n_internal_total,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,0.20859049869842672,0.09980595027379241,0.03923735502479965,471,142,15
+Retention,n_retention,Department + occupation + year FE,draft_treatment_count:war_period,0.9014227817139574,0.3312320220001185,0.007357301445473051,490,142,15
+Retention,n_retention,Department + occupation + year FE,draft_treatment_count:mass_drafting_year,0.12705273917410942,0.06407938773341831,0.04942638250570321,490,142,15
+Retention,n_retention,Department + team + occupation + year FE,draft_treatment_count:war_period,0.9484828635451935,0.3472437640218532,0.0072255386104840055,400,142,15
+Retention,n_retention,Department + team + occupation + year FE,draft_treatment_count:mass_drafting_year,0.16895498732476488,0.0909056209528682,0.06545837213166897,400,142,15
+Retention,n_retention,Section + occupation + year FE,draft_treatment_count:war_period,-0.08282867867055876,1.3321935402703557,0.950551677846923,471,142,15
+Retention,n_retention,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,0.08983166352638111,0.08050055708758935,0.2672159695782484,471,142,15
+Same dept.,n_transfer_same_dept,Department + occupation + year FE,draft_treatment_count:war_period,1.0510743980390442,0.5742568617884611,0.06940759160545776,490,142,15
+Same dept.,n_transfer_same_dept,Department + occupation + year FE,draft_treatment_count:mass_drafting_year,0.0409359997572355,0.031821878112191934,0.20050156404256286,490,142,15
+Same dept.,n_transfer_same_dept,Department + team + occupation + year FE,draft_treatment_count:war_period,1.1595381068756418,0.6181060775466736,0.06301286405211393,400,142,15
+Same dept.,n_transfer_same_dept,Department + team + occupation + year FE,draft_treatment_count:mass_drafting_year,0.05732235690726973,0.03400793808448284,0.09439583010334546,400,142,15
+Same dept.,n_transfer_same_dept,Section + occupation + year FE,draft_treatment_count:war_period,0.9120940710368559,0.5159018265247791,0.08021175582707485,471,142,15
+Same dept.,n_transfer_same_dept,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,0.06249741129587037,0.05184000004727256,0.23091107228650615,471,142,15
+Diff. dept.,n_transfer_diff_dept,Department + occupation + year FE,draft_treatment_count:war_period,0.0814069819214149,0.04079839584616545,0.04801784608434407,490,142,15
+Diff. dept.,n_transfer_diff_dept,Department + occupation + year FE,draft_treatment_count:mass_drafting_year,0.04276970278537201,0.01265083905061531,9.455663980455504e-4,490,142,15
+Diff. dept.,n_transfer_diff_dept,Department + team + occupation + year FE,draft_treatment_count:war_period,0.07456179563751142,0.041186294385296675,0.07266228261076751,400,142,15
+Diff. dept.,n_transfer_diff_dept,Department + team + occupation + year FE,draft_treatment_count:mass_drafting_year,0.032823756600446605,0.017136799914668453,0.05774474938938149,400,142,15
+Diff. dept.,n_transfer_diff_dept,Section + occupation + year FE,draft_treatment_count:war_period,0.038775886016399475,0.04686361486647932,0.41003007946166103,471,142,15
+Diff. dept.,n_transfer_diff_dept,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,0.05626142387621702,0.013486629792679634,6.589897837188526e-5,471,142,15
+New hires,n_new_hires,Department + occupation + year FE,draft_treatment_count:war_period,0.3579379403208144,0.12476099634583138,0.004780834739332027,490,142,15
+New hires,n_new_hires,Department + occupation + year FE,draft_treatment_count:mass_drafting_year,0.12072731357816566,0.049934923572999876,0.016953758902913157,490,142,15
+New hires,n_new_hires,Department + team + occupation + year FE,draft_treatment_count:war_period,0.36654551147547265,0.12845924698362357,0.005070345735774871,400,142,15
+New hires,n_new_hires,Department + team + occupation + year FE,draft_treatment_count:mass_drafting_year,0.11922065472021733,0.050720337624791625,0.020323904815585336,400,142,15
+New hires,n_new_hires,Section + occupation + year FE,draft_treatment_count:war_period,0.3095012689899094,0.12141172828198668,0.01236491421868137,471,142,15
+New hires,n_new_hires,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,0.09161627291398775,0.04455937239608502,0.04246389373350963,471,142,15

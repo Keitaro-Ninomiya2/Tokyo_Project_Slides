@@ -1,0 +1,2 @@
+dependent_variable,independent_variable,estimate,std_error,p_value,first_stage_f,observations,offices
+"Total workers, including draftees",Number of male draftees,1.7603669428515085,0.2450236267832966,1.1865652236073224e-12,51.616729219583604,7409,1323

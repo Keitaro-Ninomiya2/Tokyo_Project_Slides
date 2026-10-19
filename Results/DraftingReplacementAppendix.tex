@@ -1,0 +1,38 @@
+\begin{frame}[t]{Drafting and replacement margins: geographic benchmark}
+    \hypertarget{app:replacement-decomposition}{}
+    \tiny
+    \centering
+    \begin{threeparttable}
+    \begin{tabular}{lcccc|c}
+        \toprule
+        \multicolumn{6}{l}{\textbf{Panel A. Composition of the 2:1 ratio (internal vs.\ external)}} \\[2pt]
+        & \multicolumn{4}{c|}{\textit{Internal staff response} $\approx$ \textbf{0.41}} & \textit{External} $\approx$ \textbf{0.21} \\
+        \cmidrule(lr){2-5}\cmidrule(lr){6-6}
+         & Total & \multicolumn{3}{c|}{--- decomposition ---} & \\
+         & internal & Retention & Same dept. & Diff. dept. & New hires \\
+         &  & (same section) & (cross-section) & (cross-bureau) & \\
+        \midrule
+        No.\ drafted workers & 0.4079$^{***}$ & 0.2269$^{***}$ & 0.1001$^{**}$ & 0.0809$^{***}$ & 0.2057$^{**}$ \\
+         & (0.0761) & (0.0730) & (0.0403) & (0.0154) & (0.0998) \\
+        \addlinespace
+        \multicolumn{6}{l}{\textit{Ratio: internal / external $= 0.41\,/\,0.21 \approx \mathbf{2:1}$}} \\
+        \addlinespace
+        \multicolumn{6}{l}{\textbf{Panel B. Geographic benchmark for internal replacements}} \\
+         & Total internal & $\leq$2 km & $>$2 km & Unknown dist. & New hires \\
+        \midrule
+        No.\ drafted workers & 0.4079$^{***}$ & 0.2506$^{***}$ & 0.0780 & 0.0793 & 0.2057$^{**}$ \\
+         & (0.0761) & (0.0860) & (0.0529) & (0.0642) & (0.0998) \\
+        \midrule
+        Observations & \multicolumn{5}{c}{7,409} \\
+        Year FE & \multicolumn{5}{c}{Yes} \\
+        Section FE & \multicolumn{5}{c}{Yes} \\
+        Position FE & \multicolumn{5}{c}{Yes} \\
+        Log cumulative male baseline & \multicolumn{5}{c}{Yes} \\
+        \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]
+        \tiny
+        \item \textit{Notes:} OLS regressions. Unit of observation: destination office $\times$ kakari $\times$ occupation $\times$ year, 1938--1945. Each cell reports the coefficient on the number of drafted male workers in the same destination kakari-occupation-year. ``Retention'' counts workers who remained in the same ka group (same-section stayers). ``Same dept.'' counts workers from a different ka group within the same normalized kyoku group (cross-section transfers). ``Diff. dept.'' counts workers from a different normalized kyoku group (cross-bureau transfers). ``Total internal'' is the sum of all three. Panel B splits internal replacements by great-circle distance between prior-year and current-year office ward centroids. New hires exclude first observed office-years. All specifications include year, section, and position fixed effects and control for log cumulative male baseline employment. Standard errors clustered by office in parentheses. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
+    \end{tablenotes}
+    \end{threeparttable}
+\end{frame}

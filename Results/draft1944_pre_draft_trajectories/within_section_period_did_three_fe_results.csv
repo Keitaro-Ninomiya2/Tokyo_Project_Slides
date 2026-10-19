@@ -1,0 +1,13 @@
+variable,outcome,specification,term,estimate,se,p,n,sections
+n_internal_total,Internal transfers,Section + occupation + year FE,any_future_drafted_1944:war_period,-3.4412779947070486,4.580175386553313,0.45266646624746476,10172,987
+n_internal_total,Internal transfers,Section + occupation + year FE,any_future_drafted_1944:mass_drafting_year,0.867551949804296,0.7486041603639468,0.24684355299516805,10172,987
+n_internal_total,Internal transfers,No section FE,any_future_drafted_1944:war_period,-2.6185971143272133,4.615909019370569,0.5706406966389277,10353,987
+n_internal_total,Internal transfers,No section FE,any_future_drafted_1944:mass_drafting_year,2.71990134989663,0.6685649242431929,5.114684592211812e-5,10353,987
+n_internal_total,Internal transfers,No occupation FE,any_future_drafted_1944:war_period,-0.03684651473092171,4.892603101782995,0.9939930017492571,10175,987
+n_internal_total,Internal transfers,No occupation FE,any_future_drafted_1944:mass_drafting_year,3.2073826183656635,0.7251109242341203,1.1056500192565526e-5,10175,987
+n_new_hires,External hires,Section + occupation + year FE,any_future_drafted_1944:war_period,6.205102919782619,5.447681347461112,0.2550271457562824,10172,987
+n_new_hires,External hires,Section + occupation + year FE,any_future_drafted_1944:mass_drafting_year,-0.1175072376815513,0.649495197365673,0.8564752244806524,10172,987
+n_new_hires,External hires,No section FE,any_future_drafted_1944:war_period,5.609128545644561,5.527728173758591,0.31048546834474955,10353,987
+n_new_hires,External hires,No section FE,any_future_drafted_1944:mass_drafting_year,0.8162327373958054,0.5303139504451375,0.12408851038385606,10353,987
+n_new_hires,External hires,No occupation FE,any_future_drafted_1944:war_period,8.260386393216383,5.772510370797058,0.15282205908246135,10175,987
+n_new_hires,External hires,No occupation FE,any_future_drafted_1944:mass_drafting_year,1.4141387728258308,0.5798896179122439,0.014958050805499046,10175,987

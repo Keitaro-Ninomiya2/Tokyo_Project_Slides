@@ -1,0 +1,5 @@
+specification,dependent_variable,independent_variable,estimate,std_error,p_value,observations,offices
+Unadjusted,1944 male staff excluding draftees,Number of male draftees in 1944,1.14214465585209,0.184690177355789,1.49369159868583e-09,1222,417
+Position fixed effects,1944 male staff excluding draftees,Number of male draftees in 1944,1.09166735806999,0.180302140913686,3.15269593118976e-09,1211,417
+"Position FE, baseline-matched sample",1944 male staff excluding draftees,Number of male draftees in 1944,0.645667984036377,0.167774970256689,0.000273778906665946,223,66
+Position FE + mean 1938-1943 office stock,1944 male staff excluding draftees,Number of male draftees in 1944,0.61063458026917,0.167198059734036,0.000520516439587457,223,66

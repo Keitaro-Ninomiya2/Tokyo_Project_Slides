@@ -1,0 +1,2 @@
+dependent_variable,endogenous_variable,instrument,estimate,std_error,p_value,first_stage_f,observations,offices
+Number of 1944 draftees returning in 1946-1955,"Total workers in 1944 cell, including draftees",Number of male draftees in 1944,0.24842487138439137,0.022653968624471516,2.799508860524489e-21,354.7697303684141,654,168
