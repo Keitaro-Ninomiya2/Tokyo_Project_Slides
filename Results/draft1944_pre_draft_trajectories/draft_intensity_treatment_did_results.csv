@@ -1,37 +1,37 @@
 outcome,variable,specification,term,label,estimate,se,p,n
-Workers,n_workers,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,3.367684168961638,1.2941409126224719,0.010437962699374428,936
-Workers,n_workers,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.8349770458401714,0.29573394767991323,0.005571877974854544,936
-Workers,n_workers,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,3.6425613258880007,1.4139322245312564,0.010834494666808607,988
-Workers,n_workers,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,1.0866442423731022,0.23975335695526545,1.092271241515467e-5,988
-Workers,n_workers,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,3.514520176447174,1.3152912585929772,0.008595915530898899,938
-Workers,n_workers,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,1.0468782484552595,0.26468045958976016,1.303431974357107e-4,938
-Total internal,n_internal_total,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,2.098125254236999,0.678193142086194,0.0024639088795344183,936
-Total internal,n_internal_total,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.11974981722395649,0.15238792278480426,0.43353354476760053,936
-Total internal,n_internal_total,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,2.319868084738928,0.8118929225681475,0.004802429807580838,988
-Total internal,n_internal_total,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.004297939080575398,0.13261926976358415,0.9741843958165917,988
-Total internal,n_internal_total,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,2.05999044075714,0.6539617461288326,0.0020649673263731577,938
-Total internal,n_internal_total,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,8.488119263501404e-4,0.057868239354333544,0.9883216042289256,938
-Retention,n_retention,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,1.2075566877749218,0.33589459462643273,4.7317416404666236e-4,936
-Retention,n_retention,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.0026824452216462798,0.0460945413535224,0.9536913712079678,936
-Retention,n_retention,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,1.2823349638340438,0.4725621590731553,0.007337614718947667,988
-Retention,n_retention,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.05011372709571878,0.03939235145357259,0.20504034622542633,988
-Retention,n_retention,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,1.2022885357545499,0.3289771206855882,3.8453045970797357e-4,938
-Retention,n_retention,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.009211898300691518,0.02486128603905406,0.7116449752108397,938
-Same dept.,n_transfer_same_dept,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.6510913582207536,0.3792238784482861,0.08859818256864728,936
-Same dept.,n_transfer_same_dept,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.11932456410962256,0.093085979441141,0.20237845317466902,936
-Same dept.,n_transfer_same_dept,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.8021913695179888,0.3985948536235536,0.04573140036550841,988
-Same dept.,n_transfer_same_dept,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.0531143765810288,0.07792750549989241,0.4964221855675327,988
-Same dept.,n_transfer_same_dept,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.635997389331577,0.3745911777714368,0.09215078298046271,938
-Same dept.,n_transfer_same_dept,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.03039829498170103,0.03540759424750034,0.3923287608259134,938
-Diff. dept.,n_transfer_diff_dept,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.2394772082413243,0.12880768019151892,0.06547116762741621,936
-Diff. dept.,n_transfer_diff_dept,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.003107698335982955,0.027504009982275344,0.910228291314578,936
-Diff. dept.,n_transfer_diff_dept,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.235341751386878,0.1400265617724319,0.09464816180642563,988
-Diff. dept.,n_transfer_diff_dept,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.007298588565885162,0.025427268506751168,0.7744308533761836,988
-Diff. dept.,n_transfer_diff_dept,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.22170451567100435,0.10912466754359772,0.0444149776341484,938
-Diff. dept.,n_transfer_diff_dept,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.022035208607361342,0.014586833183882748,0.1335353477613422,938
-New hires,n_new_hires,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.92386353508915,0.5620031101541055,0.10284123908260795,936
-New hires,n_new_hires,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.26071452001312223,0.10718436033509075,0.016488243552980487,936
-New hires,n_new_hires,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.9031119200635338,0.5227183348232269,0.08584350701379387,988
-New hires,n_new_hires,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.3021380756988458,0.08942585306009064,9.02179066728044e-4,988
-New hires,n_new_hires,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,1.0144546343110792,0.5799507936624255,0.08283326202701699,938
-New hires,n_new_hires,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.3097903794078688,0.1032209663149949,0.0032767000792502435,938
+Workers,n_workers,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,3.4023226331401446,1.3058495435145887,0.010346478439210126,936
+Workers,n_workers,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.7278928459393691,0.32528422132052665,0.027100763071524942,936
+Workers,n_workers,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,3.7000763837549737,1.4376497799192214,0.01090990732477997,988
+Workers,n_workers,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.788125679235867,0.28590326585509346,0.006474326494388195,988
+Workers,n_workers,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,3.5540410068912904,1.3194816878923254,0.00809167786990265,938
+Workers,n_workers,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.943565148934088,0.25614978056528637,3.472823532486773e-4,938
+Total internal,n_internal_total,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,2.1204687571126817,0.6821014540658975,0.0023509704327223085,936
+Total internal,n_internal_total,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.18013061462781937,0.17409782884157227,0.302929631398867,936
+Total internal,n_internal_total,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,2.3518714114883665,0.8218281630655655,0.004739335795763842,988
+Total internal,n_internal_total,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.12669221173242431,0.1699667077283027,0.45705672921145735,988
+Total internal,n_internal_total,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,2.084806461409571,0.6572971303824886,0.0019275155451671806,938
+Total internal,n_internal_total,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.0541979754082355,0.07611068845325131,0.47780025267633686,938
+Retention,n_retention,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,1.2146485507644074,0.3302327575371986,3.5405268548166074e-4,936
+Retention,n_retention,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.008221083411614776,0.062476042562252226,0.8955325730005844,936
+Retention,n_retention,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,1.3000240263432432,0.47202107825966194,0.006520907681753408,988
+Retention,n_retention,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.024646736387561093,0.05832333340443209,0.6731268376695532,988
+Retention,n_retention,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,1.210642961002464,0.32741023199040314,3.3057499596792845e-4,938
+Retention,n_retention,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.004155279014337085,0.03456574858427787,0.904516537010525,938
+Same dept.,n_transfer_same_dept,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.6601868212623486,0.38442128162329725,0.08851614518851009,936
+Same dept.,n_transfer_same_dept,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.15335136211158654,0.10916567869234807,0.1626981812848331,936
+Same dept.,n_transfer_same_dept,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.8105803112488728,0.4025701114438731,0.04562880263007882,988
+Same dept.,n_transfer_same_dept,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.08324226731383283,0.09516882734824005,0.38297489590065115,988
+Same dept.,n_transfer_same_dept,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.6453504314706853,0.3771282070469507,0.08964531977331626,938
+Same dept.,n_transfer_same_dept,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.058466385615409275,0.0398376063653326,0.14484613161473087,938
+Diff. dept.,n_transfer_diff_dept,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.24563338508593016,0.13217840946502046,0.06559083170749867,936
+Diff. dept.,n_transfer_diff_dept,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.018558169104617807,0.03437331161205349,0.5902745417964628,936
+Diff. dept.,n_transfer_diff_dept,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.2412670738962382,0.14462354765243865,0.09709776966645732,988
+Diff. dept.,n_transfer_diff_dept,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,-0.01880320803102914,0.03420412780019658,0.5832183765197493,988
+Diff. dept.,n_transfer_diff_dept,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.2288130689364264,0.11059077085033944,0.04071085892304468,938
+Diff. dept.,n_transfer_diff_dept,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.008423689221507498,0.022040610457374904,0.7030025205981688,938
+New hires,n_new_hires,Section + occupation + year FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.9252249179203663,0.5614568986687183,0.10201110101024956,936
+New hires,n_new_hires,Section + occupation + year FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.2586093759726645,0.11230128014893971,0.02302610229099971,936
+New hires,n_new_hires,No section FE,draft_treatment_count:war_period,No. future drafted $\times$ War,0.9111127484269568,0.5270075272656782,0.0856422327445761,988
+New hires,n_new_hires,No section FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.23019440179295295,0.08692372419469037,0.008848527165757085,988
+New hires,n_new_hires,No occupation FE,draft_treatment_count:war_period,No. future drafted $\times$ War,1.0148502440992824,0.5783578203980722,0.08188275153005267,938
+New hires,n_new_hires,No occupation FE,draft_treatment_count:mass_drafting_year,No. future drafted $\times$ Mass drafting,0.30628536584879906,0.10525890956668928,0.0043171857281152195,938

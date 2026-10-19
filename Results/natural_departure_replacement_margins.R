@@ -1,14 +1,18 @@
 suppressMessages({
-  library(tidyverse)
+  library(dplyr)
+  library(tidyr)
+  library(readr)
+  library(purrr)
+  library(stringr)
+  library(tibble)
+  library(ggplot2)
   library(fixest)
 })
 
-FIG_REPO <- file.path(Sys.getenv("USERPROFILE"), "Documents", "GitHub", "Tokyo_Project_Figures")
-SOURCE_SCRIPT <- file.path(FIG_REPO, "Regressions", "run_replacement_margins.R")
 OUT_TEX <- file.path("Results", "NaturalDepartureReplacementMain.tex")
 OUT_CSV <- file.path("Results", "natural_departure_replacement_margins.csv")
 
-source(SOURCE_SCRIPT)
+source("Results/load_replacement_margins.R")
 
 baseline_years <- 1930:1943
 

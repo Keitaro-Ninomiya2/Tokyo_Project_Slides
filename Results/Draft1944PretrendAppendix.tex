@@ -1,29 +1,22 @@
 \begin{frame}[t]{Placebo: future drafting and prior replacements}
-    \tiny
-    \centering
-    \begin{threeparttable}
-    \begin{tabular}{lcccc|c}
-        \toprule
-        \multicolumn{6}{l}{\textbf{Pre-trend test: 1943 outcomes, 1944 draftees}} \\[2pt]
-        & \multicolumn{4}{c|}{\textit{Internal staff response}} & \textit{External} \\ 
-        \cmidrule(lr){2-5}\cmidrule(lr){6-6}
-         & Total & \multicolumn{3}{c|}{--- decomposition ---} & \\ 
-         & internal & Retention & Same dept. & Diff. dept. & New hires \\ 
-         &  & (same section) & (cross-section) & (cross-bureau) & \\ 
-        \midrule
-        Future drafted workers in 1944 & 2.7463$^{***}$ & 1.6695$^{***}$ & 1.0425 & 0.0344$^{**}$ & 0.3301$^{***}$ \\
-         & (0.7759) & (0.4830) & (0.6364) & (0.0157) & (0.1216) \\
-        \midrule
-        Observations & \multicolumn{5}{c}{803} \\
-        Future drafted workers & \multicolumn{5}{c}{821} \\
-        Section FE & \multicolumn{5}{c}{Yes} \\ 
-        Position FE & \multicolumn{5}{c}{Yes} \\ 
-        Baseline male employment (log) & \multicolumn{5}{c}{Yes} \\ 
-        \bottomrule
-    \end{tabular}
-    \begin{tablenotes}[flushleft]
-        \tiny
-        \item \textit{Notes:} OLS regressions. Outcomes are replacement margins in 1943, measured before the 1944 draft shock and excluding workers who are drafted in 1944 from the 1943 outcome counts. Treatment is the number of male workers drafted in 1944, assigned to the worker's actual 1943 office-kyoku-ka-kakari-occupation cell. The test asks whether future draft intensity predicts prior replacement patterns. Specifications include section and position fixed effects and control for log cumulative male baseline employment. Standard errors clustered by office in parentheses. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
-    \end{tablenotes}
-    \end{threeparttable}
+\tiny\centering
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\toprule
+ & Total internal & Retention & Same dept. & Diff. dept. & External hires \\
+\midrule
+Male drafted workers & 3.684$^{***}$ & 2.000$^{***}$ & 1.632$^{*}$ & 0.052$^{**}$ & 0.460$^{***}$ \\
+ & (1.043) & (0.525) & (0.912) & (0.022) & (0.150) \\
+\midrule
+Observations & \multicolumn{5}{c}{737} \\
+Offices clustered & \multicolumn{5}{c}{175} \\
+Section and occupation FE & \multicolumn{5}{c}{Yes} \\
+Log cumulative male baseline & \multicolumn{5}{c}{Yes} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\tiny\item \textit{Notes:} Outcomes are 1943 replacement margins, excluding 1944 male draftees. Exposure is the future male draft count at each worker's actual 1943 location. Section and occupation FE; no year FE in this single-year placebo. Internal total includes retention, same-department transfers, and different-department transfers. Standard errors clustered by office. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
+\end{tablenotes}
+\end{threeparttable}
+\vspace{2mm}
 \end{frame}

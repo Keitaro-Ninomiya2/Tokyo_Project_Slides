@@ -1,23 +1,14 @@
-suppressMessages({
-  library(tidyverse)
-  library(fixest)
-})
+source("Results/load_replacement_margins.R")
 
-FIG_REPO <- file.path(Sys.getenv("USERPROFILE"), "Documents", "GitHub", "Tokyo_Project_Figures")
-SOURCE_SCRIPT <- file.path(FIG_REPO, "Regressions", "run_replacement_margins.R")
-ENTRANT_CLASSIFICATION <- file.path(
-  FIG_REPO,
-  "MainResults",
-  "PostMergerEntrantOrganizationalAdjustment1944",
-  "tables",
-  "step1_tokyoto1944_worker_entrant_classification.csv"
-)
 OUT_DIR <- file.path("Results", "draft1944_pre_draft_trajectories")
 dir.create(OUT_DIR, recursive = TRUE, showWarnings = FALSE)
 
-source(SOURCE_SCRIPT)
-
 pre_years <- 1930:1943
+missing_pre_years <- setdiff(pre_years, unique(df$year_num))
+if (length(missing_pre_years)) {
+  stop("Personnel master cannot support the pre-draft analysis; missing years: ",
+       paste(missing_pre_years, collapse = ", "))
+}
 table_years <- c(1930, 1933, 1936, 1939, 1941, 1943)
 cell_table_years <- 1930:1944
 event_table_years <- c(1930, 1933, 1936, 1939, 1941, 1943, 1944)
@@ -143,7 +134,8 @@ matched_draft_cells_1943 <- draft_cells_1943 %>%
   group_by(ka, kakari, pos_norm) %>%
   summarise(n_future_drafted_1944 = sum(n_future_drafted_1944), .groups = "drop")
 
-matched_cumul_male_stock_pre <- map_dfr(pre_years, function(yr) {
+# Include the 1944 baseline: the 1944 panel joins this table below.
+matched_cumul_male_stock_pre <- map_dfr(c(pre_years, 1944L), function(yr) {
   df %>%
     filter(year_num < yr, !is_female) %>%
     group_by(ka, kakari, pos_norm) %>%
@@ -678,7 +670,7 @@ intensity_period_did_results <- imap_dfr(intensity_outcomes, function(label, var
 within_section_plot_specs <- tribble(
   ~variable, ~title, ~subtitle, ~file, ~plot_target, ~table_target,
   "n_workers", "Within-section pre-trend: cell size", "Outcome: workers in team $\\times$ occupation cell", "within_section_pretrend_workers.pdf", "app:pretrend-workers-plot", "app:pretrend-workers-table",
-  "n_internal_total", "Within-section pre-trend: internal flows", "Outcome: total internal arrivals", "within_section_pretrend_internal.pdf", "app:pretrend-internal-plot", "app:pretrend-internal-table",
+  "n_internal_total", "Within-section: total internal yearly associations", "Outcome: total internal response (including retention)", "within_section_pretrend_internal.pdf", "app:pretrend-internal-plot", "app:pretrend-internal-table",
   "n_retention", "Within-section pre-trend: retention", "Outcome: same-section retention", "within_section_pretrend_retention.pdf", "app:pretrend-retention-plot", "app:pretrend-retention-table",
   "n_transfer_same_dept", "Within-section pre-trend: same-dept transfers", "Outcome: cross-section transfers within department", "within_section_pretrend_same_dept.pdf", "app:pretrend-same-dept-plot", "app:pretrend-same-dept-table",
   "n_transfer_diff_dept", "Within-section pre-trend: diff.-dept transfers", "Outcome: cross-department transfers", "within_section_pretrend_diff_dept.pdf", "app:pretrend-diff-dept-plot", "app:pretrend-diff-dept-table",
@@ -725,8 +717,8 @@ pwalk(
 
 draft_intensity_treatment_plot_specs <- tribble(
   ~variable, ~title, ~subtitle, ~file,
-  "n_internal_total", "Draft intensity: internal transfers event study", "Outcome: total internal arrivals; treatment: number of future draftees", "draft_intensity_treatment_internal.pdf",
-  "n_new_hires", "Draft intensity: external hires event study", "Outcome: external new hires; treatment: number of future draftees", "draft_intensity_treatment_new_hires.pdf"
+  "n_internal_total", "Draft intensity: total internal yearly associations", "Outcome: total internal response (including retention); treatment: number of future draftees", "draft_intensity_treatment_internal.pdf",
+  "n_new_hires", "Draft intensity: external hires yearly associations", "Outcome: external new hires; treatment: number of future draftees", "draft_intensity_treatment_new_hires.pdf"
 )
 
 make_draft_intensity_treatment_plot <- function(target_variable, title, file) {
@@ -770,7 +762,7 @@ pwalk(
 intensity_plot_specs <- tribble(
   ~variable, ~title, ~subtitle, ~file, ~plot_target, ~table_target,
   "n_workers", "Draft intensity orthogonality: cell size", "Predictor: workers in team $\\times$ occupation cell", "draft_intensity_orthogonality_workers.pdf", "app:orthogonality-workers-plot", "app:orthogonality-workers-table",
-  "n_internal_total", "Draft intensity orthogonality: internal flows", "Predictor: total internal arrivals", "draft_intensity_orthogonality_internal.pdf", "app:orthogonality-internal-plot", "app:orthogonality-internal-table",
+  "n_internal_total", "Draft intensity orthogonality: total internal response", "Predictor: total internal response (including retention)", "draft_intensity_orthogonality_internal.pdf", "app:orthogonality-internal-plot", "app:orthogonality-internal-table",
   "n_retention", "Draft intensity orthogonality: retention", "Predictor: same-section retention", "draft_intensity_orthogonality_retention.pdf", "app:orthogonality-retention-plot", "app:orthogonality-retention-table",
   "n_transfer_same_dept", "Draft intensity orthogonality: same-dept transfers", "Predictor: cross-section transfers within department", "draft_intensity_orthogonality_same_dept.pdf", "app:orthogonality-same-dept-plot", "app:orthogonality-same-dept-table",
   "n_transfer_diff_dept", "Draft intensity orthogonality: diff.-dept transfers", "Predictor: cross-department transfers", "draft_intensity_orthogonality_diff_dept.pdf", "app:orthogonality-diff-dept-plot", "app:orthogonality-diff-dept-table",
@@ -1149,8 +1141,8 @@ intensity_frames <- pmap(
 draft_intensity_treatment_frames <- pmap(
   tribble(
     ~variable, ~title, ~subtitle, ~file, ~plot_target, ~table_target,
-    "n_internal_total", "Draft intensity: internal transfers event study", "Outcome: total internal arrivals; treatment: number of future draftees", "draft_intensity_treatment_internal.pdf", "app:intensity-internal-plot", "app:intensity-internal-table",
-    "n_new_hires", "Draft intensity: external hires event study", "Outcome: external new hires; treatment: number of future draftees", "draft_intensity_treatment_new_hires.pdf", "app:intensity-new-hires-plot", "app:intensity-new-hires-table"
+    "n_internal_total", "Draft intensity: total internal yearly associations", "Outcome: total internal response (including retention); treatment: number of future draftees", "draft_intensity_treatment_internal.pdf", "app:intensity-internal-plot", "app:intensity-internal-table",
+    "n_new_hires", "Draft intensity: external hires yearly associations", "Outcome: external new hires; treatment: number of future draftees", "draft_intensity_treatment_new_hires.pdf", "app:intensity-new-hires-plot", "app:intensity-new-hires-table"
   ),
   function(variable, title, subtitle, file, plot_target, table_target) {
     c(

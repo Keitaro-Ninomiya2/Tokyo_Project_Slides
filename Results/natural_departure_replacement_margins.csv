@@ -1,8 +1,8 @@
 period,outcome,variable,treatment,treatment_var,estimate,se,p,n,offices,total_departures
-"Peace, 1930--1936",Total internal,n_internal_total,Internal-transfer departures,n_depart_transfer,-0.06077552352674084,0.08046958675485855,0.4505495603786527,2871,448,1460
+"Peace, 1930--1936",Total internal,n_internal_total,Internal-transfer departures,n_depart_transfer,-0.060775523526740836,0.08046958675485855,0.4505495603786527,2871,448,1460
 "War, 1937--1943",Total internal,n_internal_total,Internal-transfer departures,n_depart_transfer,-0.14127147970995652,0.10081420556346876,0.16140207325324965,7470,1240,2667
 "Peace, 1930--1936",Retention,n_retention,Internal-transfer departures,n_depart_transfer,0.24793186830954386,0.07605502180332248,0.0012126612963168255,2871,448,1460
-"War, 1937--1943",Retention,n_retention,Internal-transfer departures,n_depart_transfer,-0.2010591874054775,0.08057459163933041,0.012728684502087681,7470,1240,2667
+"War, 1937--1943",Retention,n_retention,Internal-transfer departures,n_depart_transfer,-0.20105918740547754,0.08057459163933041,0.012728684502087681,7470,1240,2667
 "Peace, 1930--1936",Same dept.,n_transfer_same_dept,Internal-transfer departures,n_depart_transfer,-0.09181887247434742,0.041713613448708706,0.0283105350460976,2871,448,1460
 "War, 1937--1943",Same dept.,n_transfer_same_dept,Internal-transfer departures,n_depart_transfer,0.09903321736499157,0.03824268005720429,0.009734431613672845,7470,1240,2667
 "Peace, 1930--1936",Diff. dept.,n_transfer_diff_dept,Internal-transfer departures,n_depart_transfer,-0.21688851936193124,0.054184577450222614,7.497702560147732e-5,2871,448,1460
@@ -17,5 +17,5 @@ period,outcome,variable,treatment,treatment_var,estimate,se,p,n,offices,total_de
 "War, 1937--1943",Same dept.,n_transfer_same_dept,Exit departures,n_depart_exit,0.06830549222989303,0.06924663601799927,0.3241473084644023,7470,1240,3203
 "Peace, 1930--1936",Diff. dept.,n_transfer_diff_dept,Exit departures,n_depart_exit,-0.3438011636941327,0.10490182553614866,0.0011420028120431571,2871,448,1237
 "War, 1937--1943",Diff. dept.,n_transfer_diff_dept,Exit departures,n_depart_exit,-0.049662855793168835,0.014960074940904056,9.304291047125151e-4,7470,1240,3203
-"Peace, 1930--1936",New hires,n_new_hires,Exit departures,n_depart_exit,0.03928802408785967,0.044725120898323874,0.38025101127824,2871,448,1237
+"Peace, 1930--1936",New hires,n_new_hires,Exit departures,n_depart_exit,0.03928802408785966,0.044725120898323874,0.38025101127824,2871,448,1237
 "War, 1937--1943",New hires,n_new_hires,Exit departures,n_depart_exit,-0.04667406661145006,0.07147642204073769,0.5138917131432618,7470,1240,3203

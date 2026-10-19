@@ -1,8 +1,12 @@
 suppressMessages({
-  library(tidyverse)
-  library(fixest)
-  library(broom)
+  library(dplyr)
+  library(tidyr)
+  library(readr)
+  library(purrr)
+  library(stringr)
+  library(tibble)
   library(ggplot2)
+  library(fixest)
 })
 
 source("Results/draft1944_pre_draft_trajectories.R")
@@ -71,7 +75,7 @@ yearly_panel <- bind_rows(
 )
 
 outcomes <- c(
-  n_internal_total = "Internal transfers",
+  n_internal_total = "Total internal",
   n_new_hires = "External hires",
   n_retention = "Retention",
   n_transfer_same_dept = "Same-dept transfers",
@@ -173,8 +177,8 @@ write_csv(summary, file.path(OUT, "restricted_entrant_department_conditional_sum
 plot_df <- yearly %>%
   filter(variable %in% c("n_internal_total", "n_new_hires")) %>%
   mutate(
-    lo = if_else(year_num %in% c(1934, 1937), NA_real_, estimate - 1.96 * se),
-    hi = if_else(year_num %in% c(1934, 1937), NA_real_, estimate + 1.96 * se)
+    lo = estimate - 1.96 * se,
+    hi = estimate + 1.96 * se
   )
 
 rects <- tibble(
@@ -200,7 +204,7 @@ p <- ggplot(plot_df, aes(year_num, estimate, color = outcome, group = outcome)) 
   ) +
   geom_point(size = 1.8, na.rm = TRUE) +
   scale_fill_manual(values = c(Peace = "#dcebf5", War = "#f5e6c8", "Mass drafting" = "#eadce8"), name = NULL) +
-  scale_color_manual(values = c("Internal transfers" = "#1f6f9b", "External hires" = "#8b4fa3"), name = NULL) +
+  scale_color_manual(values = c("Total internal" = "#1f6f9b", "External hires" = "#8b4fa3"), name = NULL) +
   labs(
     x = NULL,
     y = "Dept.-conditional coefficient per restricted 1944 draftee",

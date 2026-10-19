@@ -1,55 +1,40 @@
 \begin{frame}[t]{Restricted exposure: baseline period correlations}
-    \hypertarget{app:restricted-entrant-baseline-period}{}
-    \scriptsize
-    \centering
-    \begin{threeparttable}
-    \begin{tabular}{lcc}
-        \toprule
-        & Peace, 1930--1936 & War, 1937--1943 \\
-        \midrule
-        Internal transfers & -2.236$^{**}$ & -0.450 \\
-        & (0.940) & (1.347) \\
-        External hires & -0.393 & 0.031 \\
-        & (0.393) & (0.445) \\
-        Retention & -1.450$^{*}$ & -0.443 \\
-        & (0.764) & (0.946) \\
-        Same-dept transfers & -0.434 & 0.038 \\
-        & (0.566) & (0.347) \\
-        Diff.-dept transfers & -0.352 & -0.046 \\
-        & (0.238) & (0.092) \\
-        \midrule
-        Observations & 353 & 398 \\
-        Departments clustered & 21 & 32 \\
-        Baseline male employment (log) & Yes & Yes \\
-        Department, occupation, year FE & Yes & Yes \\
-        \bottomrule
-    \end{tabular}
-    \begin{tablenotes}[flushleft]
-        \tiny
-        \item \textit{Notes:} Unit: baseline office $\times$ team $\times$ occupation $\times$ year cells, restricted to offices with any male post-merger entrant drafted in 1944. Treatment is the 1944 restricted draft count at the office $\times$ occupation level. Coefficients report department-conditional baseline correlations per restricted 1944 draftee. Standard errors clustered by department. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
-    \end{tablenotes}
-    \end{threeparttable}
-\end{frame}
+\hypertarget{app:restricted-entrant-baseline-period}{}
+\scriptsize\centering
+\begin{threeparttable}
+\begin{tabular}{lcc}
+\toprule
+ & Peace, 1930--1936 & War, 1937--1943 \\
+\midrule
+Total internal & -2.236$^{**}$ & -0.450 \\
+ & (0.940) & (1.347) \\
+Retention & -1.450$^{*}$ & -0.443 \\
+ & (0.764) & (0.946) \\
+Same dept. & -0.434 & 0.038 \\
+ & (0.566) & (0.347) \\
+Diff. dept. & -0.352 & -0.046 \\
+ & (0.238) & (0.092) \\
+External hires & -0.393 & 0.031 \\
+ & (0.393) & (0.445) \\
+\midrule
+Observations & 353 & 398 \\
+Departments in input panel & 21 & 32 \\
+Department, occupation, year FE & Yes & Yes \\
+Log cumulative male baseline & Yes & Yes \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\tiny
+\item \textit{Notes:} Baseline office-team-occupation-year cells in offices with male post-merger entrant draftees. Exposure: restricted 1944 draft count at office-occupation level. Internal total includes retention. Standard errors clustered by department. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.1$.
+\end{tablenotes}\end{threeparttable}\end{frame}
 
 \begin{frame}[t]{Restricted exposure: support}
-    \hypertarget{app:restricted-entrant-support}{}
-    \scriptsize
-    \centering
-    \begin{threeparttable}
-    \begin{tabular}{lc}
-        \toprule
-        Baseline office $\times$ team $\times$ occupation $\times$ year rows & 762 \\
-        Offices with restricted 1944 draft exposure & 21 \\
-        Departments observed in baseline panel & 40 \\
-        Baseline office $\times$ team $\times$ occupation cells & 154 \\
-        Exposed baseline office $\times$ team $\times$ occupation cells & 11 \\
-        Exposed 1944 office $\times$ occupation cells & 11 \\
-        Male post-merger entrant draftees in exposure measure & 601 \\
-        \bottomrule
-    \end{tabular}
-    \begin{tablenotes}[flushleft]
-        \tiny
-        \item \textit{Notes:} Support for the department-conditional baseline correlation exercise. Exposure is measured in 1944 among male post-merger entrants and projected to baseline office $\times$ team $\times$ occupation outcomes through office $\times$ occupation cells.
-    \end{tablenotes}
-    \end{threeparttable}
-\end{frame}
+\hypertarget{app:restricted-entrant-support}{}
+\scriptsize\centering\begin{tabular}{lc}\toprule
+Baseline cell-year rows & 762 \\
+Offices with restricted draft exposure & 21 \\
+Departments in baseline panel & 40 \\
+Baseline office-team-occupation cells & 154 \\
+Exposed baseline cells & 11 \\
+Exposed office-occupation cells & 11 \\
+Male post-merger entrant draftees & 601 \\
+\bottomrule\end{tabular}\end{frame}

@@ -1,5 +1,5 @@
 outcome,variable,specification,term,label,estimate,se,p,n
-Workers,n_workers,Cell + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,29.468065695480526,7.659519156583018,1.3872526204272462e-4,6776
-Workers,n_workers,Cell + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,1.56847162304354,9.39540134623865,0.8675002983996065,6776
-Workers,n_workers,Section/position + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,16.4108878471532,5.901064986290537,0.005546024923127527,10108
-Workers,n_workers,Section/position + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,4.114152282899997,1.303020407916343,0.0016513359188996682,10108
+Workers,n_workers,Cell + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,29.347069526460697,7.6408196910754675,1.4227247441099756e-4,6776
+Workers,n_workers,Cell + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,3.1280194872671436,8.90595050174771,0.7255999207730903,6776
+Workers,n_workers,Section/position + year FE,any_future_drafted_1944:war_period,Future drafted cell $\times$ War,16.5426489537741,5.969506719037625,0.005714295161719098,10108
+Workers,n_workers,Section/position + year FE,any_future_drafted_1944:mass_drafting_year,Future drafted cell $\times$ Mass drafting,3.8455297230509666,1.2512862375278553,0.00218889526041468,10108

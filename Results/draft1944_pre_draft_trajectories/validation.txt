@@ -1,0 +1,20 @@
+Validated: same estimation rows for all five margins in each replacement specification.
+Validated: retention + same-department + different-department coefficients equal internal total (<1e-8).
+Validated: pooled benchmark agrees with the upstream model coefficients (<1e-10).
+Validated: 1944 cumulative-male baseline contains positive historical counts.
+# A tibble: 3 × 10
+  sample                             internal external internal_external_ratio
+  <chr>                                 <dbl>    <dbl>                   <dbl>
+1 1944                                  0.193   0.0967                    2.00
+2 1938-1945 pooled                      0.408   0.206                     1.98
+3 1938-1945 pooled, entrant exposure    0.465   0.335                     1.39
+  retention same_department different_department decomposition_error     n
+      <dbl>           <dbl>                <dbl>               <dbl> <int>
+1    0.0715          0.0585               0.0632           -1.39e-17   623
+2    0.227           0.100                0.0809           -6.17e-13  7409
+3    0.221           0.0958               0.148             2.97e-12  7409
+  offices
+    <int>
+1     161
+2    1192
+3    1192
